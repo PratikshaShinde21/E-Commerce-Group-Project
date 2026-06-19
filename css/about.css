@@ -99,3 +99,73 @@
     line-height: 1.9;
     color: #475569;
 }
+
+/* Mission & Vision Section */
+
+.mission-vision{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 70px auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* Cards */
+.mission-card,
+.vision-card{
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+    min-width: 320px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+/* Blue Line */
+.mission-card::before,
+.vision-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: #007bff;
+    transition: width 0.4s ease;
+}
+
+/* Hover Effect */
+.mission-card:hover,
+.vision-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+/* Blue Line Animation */
+.mission-card:hover::before,
+.vision-card:hover::before{
+    width: 100%;
+}
+
+/* Heading */
+.mission-card h3,
+.vision-card h3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* Icon */
+.title-icon{
+    width: 40px;
+    height: 40px;
+}
