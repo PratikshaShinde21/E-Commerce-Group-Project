@@ -1,5 +1,10 @@
-header
-.navbar {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,6 +28,21 @@ header
     display: block;
 }
 
+.nav-links a:hover {
+    color: #3b82f6;
+}
+
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-btn img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
 .logo a {
     text-decoration: none;
     color: white;
@@ -44,21 +64,7 @@ header
     transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #3b82f6;
-}
-
-.menu-btn {
-    display: none;
-    cursor: pointer;
-}
-
-.menu-btn img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-
+/* responsive */
 @media(max-width:768px) {
 
     .menu-btn {
@@ -79,7 +85,6 @@ header
     }
 
     .nav-links.active {
-        /* display: flex; */
         display: flex !important;
-}
+    }
 }
