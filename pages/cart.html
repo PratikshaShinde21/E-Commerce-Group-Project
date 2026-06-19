@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cart-section">
+
+            <h2>
+                <img src="../images/order summary.png" class="icon">
+                Your Shopping Cart
+            </h2>
+
+            <div id="cart-container">
+
+            </div>
+
+        </div>
+
+        <div class="summary-section">
+
+            <div class="coupon-box">
+
+                <h3>
+                    <img src="../images/coupon.png" class="icon">
+                    Apply Coupon
+                </h3>
+
+                <div class="coupon-area">
+
+                    <input type="text" id="couponInput" placeholder="Enter Coupon Code">
+
+                    <button id="applyCoupon">
+                        Apply
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="summary-box">
+
+                <h2>
+                    <img src="../images/order summary.png" class="icon">
+                    Order Summary
+                </h2>
+
+                <div class="summary-row">
+
+                    <span>
+                        <img src="../images/subtotal.png" class="icon">
+                        Subtotal
+                    </span>
+
+                    <span id="subtotal">₹0</span>
+
+                </div>
+
+                <div class="summary-row">
+
+                    <span>
+                        <img src="../images/discount.png" class="icon">
+                        Discount
+                    </span>
+
+                    <span id="discount">₹0</span>
+
+                </div>
+
+                <div class="summary-row">
+
+                    <span>
+                        <img src="../images/tax.png" class="icon">
+                        Tax
+                    </span>
+
+                    <span id="tax">₹0</span>
+
+                </div>
+
+                <hr>
+
+                <div class="summary-row total">
+
+                    <span>
+                        <img src="../images/totalquality.png" class="icon">
+                        Total
+                    </span>
+
+                    <span id="total">₹0</span>
+
+                </div>
+
+                <button id="checkoutBtn" class="purchase-btn">
+
+                    <img src="../images/make puchase.png" class="icon">
+                    Make Purchase
+
+                </button>
+
+                <a href="../pages/procut details.html" class="back-btn">
+
+                    <img src="../images/back to btn.png" class="icon">
+                    Back To Shop
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="recommended">
+        <h2>
+
+            <img src="../images/order summary.png" class="icon">
+            Recommended Products
+        </h2>
+
+        <div class="recommended-grid">
+
+            <div class="card">
+
+                <img src="../images/gaminghandset.webp">
+
+                <h4>Gaming Headset</h4>
+
+                <p>₹1899</p>
+
+                <button class="add-cart" data-id="1">
+
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="../images/smartwatch.webp">
+
+                <h4>Smart Watch</h4>
+
+                <p>₹2999</p>
+
+                <button class="add-cart" data-id="2">
+
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="../images/wireless earbuds.webp">
+
+                <h4>Wireless Earbuds</h4>
+
+                <p>₹1499</p>
+
+                <button class="add-cart" data-id="3">
+
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="../images/denim jacket.avif">
+
+                <h4>Denim Jacket</h4>
+
+                <p>₹2199</p>
+
+                <button class="add-cart" data-id="4">
+
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+            <div class="card">
+
+                <img src="../images/shoessport.webp">
+
+                <h4>Sports Shoes</h4>
+
+                <p>₹2499</p>
+
+                <button class="add-cart" data-id="5">
+
+                    Add To Cart
+
+                </button>
+            </div>
+            <div class="card">
+                <img src="../images/leather bag.jpg">
+
+                <h4>Leather Bag</h4>
+
+                <p>₹1699</p>
+
+                <button class="add-cart" data-id="6">
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+            <div class="card">
+
+                <img src="../images/premium shirt.jpg">
+
+                <h4>Premium Shirt</h4>
+
+                <p>₹999</p>
+
+                <button class="add-cart" data-id="7">
+
+
+                    Add To Cart
+
+                </button>
+
+            </div>
+            <div class="card">
+
+                <img src="../images/bluetoothe speaker.webp">
+
+                <h4>Bluetooth Speaker</h4>
+
+                <p>₹1999</p>
+
+                <button class="add-cart" data-id="8">
+                    Add To Cart
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="../js/cart.js"></script>
+
+</body>
+
+</html>

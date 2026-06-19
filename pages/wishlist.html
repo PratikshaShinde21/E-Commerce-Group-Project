@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Wishlist</title>
+    <link rel="stylesheet" href="./../css/wishlist.css">
+    <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="wishlist-page">
+    <div class="wishlist-header">
+        <div>
+            <h1>My Wishlist 💗</h1>
+            <p>Save your favorite products for later</p>
+        </div>
+
+        <div class="header-actions">
+            <button id="shareWishlistBtn" class="small-btn"> <i class="fa-solid fa-share-nodes"></i></button>
+            <button id="copyLinkBtn" class="small-btn"><i class="fa-solid fa-link"></i> </button>
+        </div>
+    </div>
+
+    <div class="top-controls">
+        <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="searchInput" placeholder="Search wishlist products..." >
+        </div>
+        <select id="sortSelect">
+            <option value="default">Sort Products</option>
+            <option value="name-asc">Name A-Z </option>
+            <option value="name-desc"> Name Z-A </option>
+            <option value="price-low"> Price Low → High </option>
+            <option value="price-high"> Price High → Low </option>
+        </select>
+    </div>
+
+    <div class="summary-grid">
+        <div class="summary-card">
+            <span>Total Items</span>
+            <h2 id="totalItems">0</h2>
+        </div>
+
+        <div class="summary-card">
+            <span>Selected</span>
+            <h2 id="selectedItems"> 0 </h2>
+        </div>
+
+        <div class="summary-card">
+            <span>Total Value</span>
+            <h2 id="totalValue">  ₹0 </h2>
+        </div>
+    </div>
+
+    <div class="bulk-actions">
+        <label class="select-all-box">
+            <input type="checkbox" id="selectAllToggle" > <span> Select All</span>
+         </label>
+        <button id="moveSelectedBtn"><i class="fa-solid fa-cart-shopping "></i> </button>
+        <button id="deleteSelectedBtn"><i class="fa-solid fa-trash"></i></button>
+    </div>
+
+    <div id="wishlistGrid" class="wishlist-grid"></div>
+
+    <div id="emptyState" class="empty-state">
+        <div class="empty-icon"> ❤️</div>
+        <h2> Your Wishlist Is Empty </h2>
+        <p> Products added from your store will appear here.</p>
+        <a href="./../pages/product.html"class="shop-btn">Continue Shopping</a>
+    </div>
+    <div class="empty-slider">
+    <div class="slider-track">
+        <img src="./../images/wishlist1.jpg">
+       <img src="./../images/wishlist2.jpg">
+       <img src="./../images/wishlist3.jpg">
+       <img src="./../images/wishlist4.jpg">
+       <img src="./../images/wishlist5.jpg">
+       <img src="./../images/wishlist6.jpg">
+       <img src="./../images/wishlist7.jpg">
+       <img src="./../images/wishlist8.jpg">
+       <img src="./../images/wishlist9.jpg">
+       <img src="./../images/wishlist10.jpg">
+       <img src="./../images/wishlist11.jpg">
+       <img src="./../images/wishlist12.jpg">
+       <img src="./../images/wishlist13.jpg">
+       <img src="./../images/wishlist15.jpg">
+       <img src="./../images/wishlist16.jpg">
+       <img src="./../images/wishlist17.jpg">
+       <img src="./../images/wishlist18.jpg">
+       <img src="./../images/wishlist19.jpg">
+       <img src="./../images/wishlist20.jpg">
+       <img src="./../images/wishlist21.jpg">
+       <img src="./../images/wishlist22.jpg">
+       <img src="./../images/wishlist23.jpg">
+    </div>
+</div>
+</div>
+<div id="toast"></div>
+<script src="./../js/wishlist.js"></script>
+</body>
+</html>
