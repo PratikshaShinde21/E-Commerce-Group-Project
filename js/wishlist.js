@@ -44,7 +44,7 @@ function renderWishlist(products = wishlist){
         card.innerHTML = `
         <div class="image-wrapper">
             <input type="checkbox"class="select-product"${item.selected ? "checked" : ""} onchange="toggleSelect(${actualIndex})">
-            <button class="share-product" onclick="shareProduct(${actualIndex})" title="Share Product" > <i class="fa-solid fa-share-nodes"></i> </button>
+           <button class="share-product" onclick="shareProduct(${actualIndex})" title="Share Product"> <img src="./../images/send.png" height="25px"></button>
             <img src="${item.image}" alt="${item.name}" class="product-image" >
         </div>
 
@@ -53,9 +53,8 @@ function renderWishlist(products = wishlist){
             <div class="price">
                 ₹${item.price} </div>
             <div class="card-actions">
-                <buttonclass="cart-btn" onclick="moveToCart(${actualIndex})">  Add To Cart</button>
-                <button class="delete-btn" onclick="deleteItem(${actualIndex})"> Delete
-                </button>
+              <button class="cart-btn" onclick="moveToCart(${actualIndex})"> Add To Cart </button>
+                <button class="delete-btn" onclick="deleteItem(${actualIndex})"> Delete </button>
             </div>
         </div>  `;
 

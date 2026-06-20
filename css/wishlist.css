@@ -38,7 +38,6 @@ body{
 }
 .small-btn{
     border:none;
-    background:#2563eb;
     color:#fff;
     padding:10px 14px;
     border-radius:25px;
@@ -146,15 +145,9 @@ body{
     gap:8px;
     font-weight:600;
     transition:.3s;
-}
-#moveSelectedBtn{
-    background:#2563eb;
-}
+} 
 #moveSelectedBtn:hover{
     background:#1d4ed8;
-}
-#deleteSelectedBtn{
-    background:#ef4444;
 }
 #deleteSelectedBtn:hover{
     background:#dc2626;
@@ -562,4 +555,25 @@ body{
 }
 .empty-slider{
     margin-top:15px;
+}
+.cart-btn{
+    margin: 15px 0 20px;
+    padding: 10px 25px;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.cart-btn:hover{
+    background: #1d4ed8;
+}
+.card-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
