@@ -201,3 +201,28 @@ document
     });
 });
 renderWishlist();
+
+// dark light mode
+// Dark Mode
+
+const themeBtn = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    themeIcon.src = "../images/sun.png";
+}
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme","dark");
+        themeIcon.src = "../images/sun.png";
+    }
+    else{
+        localStorage.setItem("theme","light");
+        themeIcon.src = "../images/moon.png";
+    }
+});

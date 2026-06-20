@@ -22,13 +22,17 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="./../index.html">Home</a></li>
-                <li><a href="./product.html">Products</a></li>
-                <li><a href="./wishlist.html">Wishlist</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./cart.html">Cart</a></li>
-                <li><a href="./login.html">Login</a></li>
+                <li><a href="./../index.html"><img src="./../images/home.png" class="nav-icon">Home</a></li>
+                <li><a href="#"><img src="./../images/shop.png" class="nav-icon">Products</a></li>
+                <li><a href="./wishlist.html"><img src="./../images/like.png" class="nav-icon">Wishlist</a></li>
+                <li><a href="./about.html"><img src="./../images/info.png" class="nav-icon">About</a></li>
+                <li><a href="./cart.html"><img src="./../images/card.png" class="nav-icon">Cart</a></li>
+                <li><a href="./login.html"><img src="./../images/log.png" class="nav-icon">Login</a></li>
             </ul>
+
+            <button id="themeToggle" class="theme-btn">
+                <img src="../images/moon.png" alt="theme" id="themeIcon">
+            </button>
 
             <div class="menu-btn" onclick="toggleMenu()">
                 <img src="./../images/menu.png" alt="menu" />
@@ -38,7 +42,7 @@
     <div class="container">
         <div class="cart-section">
             <h2>
-                <img src="../images/order summary.png" class="icon">
+                <img src="../images/order.png" class="icon">
                 Your Shopping Cart
             </h2>
 
@@ -109,19 +113,21 @@
                 <button id="checkoutBtn" class="purchase-btn">
                     <img src="../images/make puchase.png" class="icon">
                     Make Purchase
+
                 </button>
 
                 <a href="../pages/procut details.html" class="back-btn">
                     <img src="../images/back to btn.png" class="icon">
-                  Back To Shop
+                    Back To Shop
                 </a>
             </div>
         </div>
     </div>
 
+
     <section class="recommended">
         <h2>
-            <img src="../images/order summary.png" class="icon">
+            <img src="../images/order.png" class="icon">
             Recommended Products
         </h2>
 

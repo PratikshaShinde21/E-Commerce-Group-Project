@@ -53,7 +53,7 @@ const recommendedProducts = [
         name: "Premium Shirt",
         price: 999,
         oldPrice: 1400,
-        image: "../images/premium shirt.webp"
+        image: "../images/premiumshirt.jpg"
     },
 
     {
@@ -78,13 +78,19 @@ function displayCart() {
 
     cartContainer.innerHTML = "";
 
+   
     if (cart.length === 0) {
 
-        cartContainer.innerHTML =
+        cartContainer.innerHTML = `
+            <div class="empty-cart-box">
+                <h2>🛒 Your Cart is Empty</h2>
+                <p>Add products to continue shopping</p>
 
-            `<div class="empty-cart">
-🛒 Your Cart Is Empty
-</div>`;
+                <a href="../pages/product.html" class="continue-btn">
+                    Continue Shopping
+                </a>
+            </div>
+        `;
 
         updateSummary();
         return;
@@ -115,14 +121,25 @@ function displayCart() {
 
 </div>
 
+<div class="cart-actions">
+
+<button
+class="buy-btn"
+onclick="buyNow(${item.id})">
+
+Buy Now
+
+</button>
+
 <button
 class="remove-btn"
 onclick="removeItem(${item.id})">
 
-<img src="../images/delete image.png" class="trash-icon">
 Remove
 
 </button>
+
+</div>
 
 </div>
 `;
@@ -183,10 +200,7 @@ addButtons.forEach((button, index) => {
 
         setTimeout(() => {
 
-            button.innerHTML = `
-
-Add To Cart
-`;
+            button.innerHTML = `Add To Cart`;
 
         }, 1500);
 
@@ -199,9 +213,7 @@ function updateSummary() {
     let subtotal = 0;
 
     cart.forEach(item => {
-
         subtotal += item.price;
-
     });
 
     let tax =
@@ -211,9 +223,7 @@ function updateSummary() {
         subtotal + tax - discountAmount;
 
     if (total < 0) {
-
         total = 0;
-
     }
 
     document.getElementById("subtotal")
@@ -227,8 +237,8 @@ function updateSummary() {
 
     document.getElementById("total")
         .innerText = `₹${total}`;
-
 }
+
 document
     .getElementById("applyCoupon")
     .addEventListener("click", () => {
@@ -243,9 +253,7 @@ document
         let subtotal = 0;
 
         cart.forEach(item => {
-
             subtotal += item.price;
-
         });
 
         if (code === "SAVE10") {
@@ -271,7 +279,6 @@ document
             discountAmount = 0;
 
             alert("Invalid Coupon Code");
-
         }
 
         updateSummary();
@@ -283,10 +290,8 @@ document
     .addEventListener("click", () => {
 
         if (cart.length === 0) {
-
             alert("Cart Is Empty");
             return;
-
         }
 
         alert("🎉 Order Placed Successfully");
@@ -300,3 +305,28 @@ document
     });
 
 displayCart();
+
+// dark light mode
+// Dark Mode
+
+const themeBtn = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    themeIcon.src = "../images/sun.png";
+}
+
+themeBtn.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+        localStorage.setItem("theme","dark");
+        themeIcon.src = "../images/sun.png";
+    }
+    else{
+        localStorage.setItem("theme","light");
+        themeIcon.src = "../images/moon.png";
+    }
+});

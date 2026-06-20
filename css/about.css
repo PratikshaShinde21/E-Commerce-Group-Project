@@ -327,3 +327,50 @@
 .github-icon:hover{
     transform:scale(1.2);
 }
+
+/* dark light */
+/* Theme Button */
+.theme-btn{
+    background: white;
+    border: 2px solid #2563eb;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-btn img{
+    width: 22px;
+    height: 22px;
+}
+
+
+/* Dark Mode */
+body.dark-mode{
+    background: #111827;
+    color: white;
+}
+
+body.dark-mode section{
+    background: #111827 !important;
+}
+
+body.dark-mode .story-content,
+body.dark-mode .value-card,
+body.dark-mode .team-member,
+body.dark-mode .mission-box,
+body.dark-mode .vision-box,
+body.dark-mode .stat-box{
+    background: #1f2937;
+    color: white;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p{
+    color: white;
+}

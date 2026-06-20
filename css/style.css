@@ -10,10 +10,15 @@ header .navbar {
     align-items: center;
     padding: 18px 8%;
     background-color: #111827;
-    position: sticky;
+
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+
     z-index: 1000;
 }
+
 
 .logo {
     display: flex;
@@ -57,11 +62,25 @@ header .navbar {
     gap: 30px;
 }
 
-.nav-links a {
+.nav-links a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
     text-decoration: none;
     color: white;
     font-size: 1rem;
     transition: 0.3s;
+}
+
+.nav-icon{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.nav-links a:hover{
+    color: #3b82f6;
+    transform: translateY(-2px);
 }
 
 /* responsive */
@@ -197,8 +216,8 @@ header .navbar {
 }
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 50px;
+    font-size: 2.5rem;
     color: #1e293b;
 }
 
@@ -538,6 +557,8 @@ display: flex;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
+        display: flex;
+    justify-content: space-between;
 }
 
 .footer-box h3 {
@@ -568,4 +589,64 @@ display: flex;
     height: 18px;
     vertical-align: middle;
     margin-right: 8px;
+}
+/* Theme Button */
+.theme-btn{
+    width: 45px;
+    height: 45px;
+    border: 2px solid #3b82f6;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.theme-btn img{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.theme-btn:hover{
+    background: #f2f2f2;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(59,130,246,0.5);
+}
+
+/* Dark Mode */
+
+body.dark-mode{
+    background: #0f172a;
+    color: white;
+}
+
+body.dark-mode .categories,
+body.dark-mode .features,
+body.dark-mode .faq,
+body.dark-mode .reviews{
+    background: #1e293b;
+}
+
+body.dark-mode .featured-products{
+    background: #0f172a;
+}
+
+body.dark-mode .product-card,
+body.dark-mode .category-card,
+body.dark-mode .feature-card,
+body.dark-mode .review-card,
+body.dark-mode .faq-item{
+    background: #334155;
+    color: white;
+}
+
+body.dark-mode .section-title,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode p{
+    color: white;
 }

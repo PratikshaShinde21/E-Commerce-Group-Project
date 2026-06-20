@@ -166,3 +166,35 @@ function registerUser(){
 
     alert("Registration Successful");
 }
+
+// dark light mode
+// Dark Mode
+
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+
+// Page reload नंतर theme कायम ठेवण्यासाठी
+if(localStorage.getItem("theme") === "dark"){
+
+    document.body.classList.add("dark-mode");
+
+    themeIcon.src = "../images/sun.png";
+}
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("theme","dark");
+
+        themeIcon.src = "../images/sun.png";
+
+    }else{
+
+        localStorage.setItem("theme","light");
+
+        themeIcon.src = "../images/moon.png";
+    }
+});
