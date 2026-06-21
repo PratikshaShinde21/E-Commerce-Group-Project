@@ -16,6 +16,9 @@ if(!product){
 
     window.location.href =
     "products.html";
+    
+
+}
 
 /* Product Details */
 
