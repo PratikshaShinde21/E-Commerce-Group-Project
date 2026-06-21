@@ -14,6 +14,22 @@ function showLogin() {
     navAuthText.textContent = "Login";
 }
 
+// forgot
+function forgotPassword(){
+
+    let mobile = prompt("Enter your registered mobile number");
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    let user = users.find(u => u.mobile === mobile);
+
+    if(user){
+        alert("Your password is: " + user.password);
+    }else{
+        alert("Mobile number not found!");
+    }
+}
+
 // Register
 registerForm.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -91,37 +107,35 @@ loginForm.addEventListener("submit", function (e) {
 });
 function toggleLoginPassword(){
 
-    let password =
-    document.getElementById("loginPassword");
-
-    let eye =
-    document.getElementById("loginEye");
+    let password = document.getElementById("loginPassword");
+    let eye = document.getElementById("loginEye");
 
     if(password.type === "password"){
+
         password.type = "text";
-        eye.className = "fa-solid fa-eye-slash";
-    }
-    else{
+        eye.src = "./../images/view.png";
+
+    }else{
+
         password.type = "password";
-        eye.className = "fa-solid fa-eye";
+        eye.src = "./../images/hide.png";
     }
 }
 
 function toggleRegisterPassword(){
 
-    let password =
-    document.getElementById("registerPassword");
-
-    let eye =
-    document.getElementById("registerEye");
+    let password = document.getElementById("registerPassword");
+    let eye = document.getElementById("registerEye");
 
     if(password.type === "password"){
+
         password.type = "text";
-        eye.className = "fa-solid fa-eye-slash";
-    }
-    else{
+        eye.src = "./../images/view.png";
+
+    }else{
+
         password.type = "password";
-        eye.className = "fa-solid fa-eye";
+        eye.src = "./../images/hide.png";
     }
 }
 

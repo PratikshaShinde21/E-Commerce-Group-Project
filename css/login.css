@@ -144,6 +144,43 @@ body{
     text-decoration:underline;
 }
 
+/* Remember Me & Forgot Password */
+
+.login-options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+    font-size:14px;
+}
+
+.remember-me{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    color:#475569;
+    cursor:pointer;
+}
+
+.remember-me input{
+    width:auto !important;
+    margin:0 !important;
+}
+
+.forgot-password{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:500;
+}
+
+.forgot-password:hover{
+    text-decoration:underline;
+}
+.eye-icon{
+    width:20px;
+    height:20px;
+    object-fit:contain;
+}
 /* Mobile Responsive */
 @media(max-width:768px){
 
