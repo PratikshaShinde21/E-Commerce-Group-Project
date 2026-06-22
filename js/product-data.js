@@ -445,8 +445,8 @@ const products = [
     },
     {
         id: 22,
-        name: "EFERMONE® Polarized Sunglasses for Men and Women 100% UV Protection Outdoor Travelling Sports Bikes Cars Driving and Hiking (Square | Medium)",
-        description: "These stylish square-frame sunglasses feature premium polarized lenses and 100% UV protection for superior eye safety and visual clarity. Built with a durable frame and versatile design, they are perfect for driving, travelling, biking, hiking, and everyday outdoor use.",
+        name: "Yash Gallery Women's Rayon Regular Fit Top",
+        description: "This stylish women's printed top is crafted from a soft and breathable viscose blend fabric, offering all-day comfort and effortless style. Featuring a trendy striped pattern, round neckline, and regular fit silhouette, it is perfect for casual outings, everyday wear, and modern wardrobe styling.",
         originalPrice: 1399,
         price: 459,
         category: "fashion",
