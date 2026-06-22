@@ -151,36 +151,38 @@ function decreaseQty() {
 
 }
 
-/* Buy Now */
-
-function buyNow() {
+function buyNow(){
 
     let currentUser =
-        JSON.parse(
-            localStorage.getItem(
-                "currentUser"
-            )
-        );
+    JSON.parse(
+    localStorage.getItem(
+    "currentUser"
+    )
+    );
 
-    if (!currentUser) {
+    if(!currentUser){
 
         alert(
-            "Please Login First"
+        "Please Login First"
         );
 
+        window.location.href =
+        "login.html";
+
         return;
+
     }
 
     let orderKey =
-        "orders_" +
-        currentUser.mobile;
+    "orders_" +
+    currentUser.mobile;
 
     let orders =
-        JSON.parse(
-            localStorage.getItem(
-                orderKey
-            )
-        ) || [];
+    JSON.parse(
+    localStorage.getItem(
+    orderKey
+    )
+    ) || [];
 
     orders.push({
 
@@ -201,37 +203,96 @@ function buyNow() {
         orderKey,
 
         JSON.stringify(
-            orders
+        orders
         )
 
     );
 
     alert(
-        "Order Placed Successfully"
+    "Order Placed Successfully 🎉"
     );
 
     window.location.href =
-        "orders.html";
+    "orders.html";
 
 }
+function addToWishlist(){
 
-function addToWishlist()
- { let currentUser = JSON.parse(localStorage.getItem("currentUser")); 
-    if (!currentUser) {
-         alert("Please Login First");
-          return; } 
-          let wishlistKey = "wishlist_" + currentUser.mobile; 
-          let wishlist = JSON.parse(localStorage.getItem(wishlistKey)) || []; 
-          let alreadyExists = wishlist.find(item => item.id === product.id); 
-          if (alreadyExists) { alert("Product Already In Wishlist ❤️"); 
-            window.location.href = "wishlist.html";
-             return; } 
-            wishlist.push(product); 
-            localStorage.setItem(wishlistKey, 
-                JSON.stringify(wishlist)); 
-                alert("Added To Wishlist ❤️"); 
-                window.location.href = "wishlist.html"; 
-            }
+    let currentUser =
+    JSON.parse(
+    localStorage.getItem(
+    "currentUser"
+    )
+    );
+
+    if(!currentUser){
+
+        alert(
+        "Please Login First"
+        );
+
+        window.location.href =
+        "login.html";
+
+        return;
+
+    }
+
+    let wishlistKey =
+    "wishlist_" +
+    currentUser.mobile;
+
+    let wishlist =
+    JSON.parse(
+    localStorage.getItem(
+    wishlistKey
+    )
+    ) || [];
+
+    let alreadyExists =
+    wishlist.find(
+
+    item =>
+
+    item.id === product.id
+
+    );
+
+    if(alreadyExists){
+
+        alert(
+        "Product Already In Wishlist ❤️"
+        );
+
+        window.location.href =
+        "wishlist.html";
+
+        return;
+
+    }
+
+    wishlist.push(
+    product
+    );
+
+    localStorage.setItem(
+
+        wishlistKey,
+
+        JSON.stringify(
+        wishlist
+        )
+
+    );
+
+    alert(
+    "Added To Wishlist ❤️"
+    );
+
+    window.location.href =
+    "wishlist.html";
+
+}
 
             
 let selectedRating = 0;

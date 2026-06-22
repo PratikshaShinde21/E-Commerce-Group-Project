@@ -1031,6 +1031,27 @@ highlights: [
     "3-Year Brand Warranty"
 ]
     },
-   
+
+     {
+        id: 49,
+        name: "Himalaya Purifying Neem Face Wash|Clears and Prevents Pimples & Acne|Made with 5 parts of Neem|New & Best Ever clinically Proven formula|Gently Cleanses|For men and women|400 ml",
+        description: "This Neem Face Wash gently cleanses the skin, removing dirt, excess oil, and impurities while helping to prevent acne and pimples. Suitable for all skin types, its refreshing formula promotes clearer, brighter, and healthier-looking skin with regular use.",
+        originalPrice:425,
+        price: 327,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51ixwpTYK7L._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/61+xByXvt2L._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/51V16xBpPXL._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/61Rscf9Q45L._SL1100_.jpg",
+        ],
+  highlights: [
+     "Deep Cleansing Neem Formula",
+    "Helps Reduce Acne & Pimples",
+    "Controls Excess Oil",
+    "Suitable for All Skin Types",
+    "Refreshing & Skin Brightening"
+]
+    },
 ];
 
