@@ -1,17 +1,16 @@
-const navAuthText = document.getElementById("navAuthText");
+const loginForm = document.getElementById("loginForm");
+const registerForm = document.getElementById("registerForm");
 
 function showRegister() {
     loginForm.style.display = "none";
     registerForm.style.display = "block";
 
-    navAuthText.textContent = "Register";
 }
 
 function showLogin() {
     registerForm.style.display = "none";
     loginForm.style.display = "block";
 
-    navAuthText.textContent = "Login";
 }
 
 // forgot
@@ -44,7 +43,7 @@ registerForm.addEventListener("submit", function (e) {
     // Check if mobile already exists
     let existingUser = users.find(
         user => user.mobile === mobile
-    );
+); 
 
     if (existingUser) {
         alert("Mobile number already registered!");
@@ -85,25 +84,28 @@ loginForm.addEventListener("submit", function (e) {
         u =>
         u.mobile === mobile &&
         u.password === password
+);
+
+   if (user) {
+
+    localStorage.setItem(
+        "currentUser",
+        JSON.stringify(user)
     );
 
-    if (user) {
+    alert("Login Successful!");
 
-        localStorage.setItem(
-            "currentUser",
-            JSON.stringify(user)
-        );
+    // Hide Login Button
+    document.querySelector('#loginForm button[type="submit"]').style.display = "none";
 
-        alert("Login Successful!");
+    // Show Shop Now Button
+    document.getElementById("shopNowBtn").style.display = "block";
 
-        // Redirect to products page
-        window.location.href = "./../pages/product.html";
+} else {
 
-    } else {
+    alert("Invalid Mobile Number or Password");
 
-        alert("Invalid Mobile Number or Password");
-
-    }
+}
 });
 function toggleLoginPassword(){
 
@@ -139,19 +141,10 @@ function toggleRegisterPassword(){
     }
 }
 
-// dark light mode
-// Dark Mode
-
-const themeToggle = document.getElementById("themeToggle");
-const themeIcon = document.getElementById("themeIcon");
-
-// Page reload नंतर theme कायम ठेवण्यासाठी
-if(localStorage.getItem("theme") === "dark"){
-
-    document.body.classList.add("dark-mode");
-
-    themeIcon.src = "../images/sun.png";
+function goToProducts(){
+    window.location.href = "./products.html";
 }
+
 
 themeToggle.addEventListener("click", () => {
 

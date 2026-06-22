@@ -154,16 +154,16 @@ function decreaseQty() {
 function buyNow(){
 
     let currentUser =
-    JSON.parse(
-    localStorage.getItem(
-    "currentUser"
-    )
-    );
+        JSON.parse(
+            localStorage.getItem(
+                "currentUser"
+            )
+        );
 
-    if(!currentUser){
+    if (!currentUser) {
 
         alert(
-        "Please Login First"
+            "Please Login First"
         );
 
         window.location.href =
@@ -174,15 +174,15 @@ function buyNow(){
     }
 
     let orderKey =
-    "orders_" +
-    currentUser.mobile;
+        "orders_" +
+        currentUser.mobile;
 
     let orders =
-    JSON.parse(
-    localStorage.getItem(
-    orderKey
-    )
-    ) || [];
+        JSON.parse(
+            localStorage.getItem(
+                orderKey
+            )
+        ) || [];
 
     orders.push({
 
@@ -203,7 +203,7 @@ function buyNow(){
         orderKey,
 
         JSON.stringify(
-        orders
+            orders
         )
 
     );
@@ -213,22 +213,22 @@ function buyNow(){
     );
 
     window.location.href =
-    "orders.html";
+        "orders.html";
 
 }
 function addToWishlist(){
 
     let currentUser =
-    JSON.parse(
-    localStorage.getItem(
-    "currentUser"
-    )
-    );
+        JSON.parse(
+            localStorage.getItem(
+                "currentUser"
+            )
+        );
 
-    if(!currentUser){
+    if (!currentUser) {
 
         alert(
-        "Please Login First"
+            "Please Login First"
         );
 
         window.location.href =
@@ -239,40 +239,40 @@ function addToWishlist(){
     }
 
     let wishlistKey =
-    "wishlist_" +
-    currentUser.mobile;
+        "wishlist_" +
+        currentUser.mobile;
 
     let wishlist =
-    JSON.parse(
-    localStorage.getItem(
-    wishlistKey
-    )
-    ) || [];
+        JSON.parse(
+            localStorage.getItem(
+                wishlistKey
+            )
+        ) || [];
 
     let alreadyExists =
-    wishlist.find(
+        wishlist.find(
 
-    item =>
+            item =>
 
     item.id === product.id
 
-    );
+        );
 
-    if(alreadyExists){
+    if (alreadyExists) {
 
         alert(
-        "Product Already In Wishlist ❤️"
+            "Product Already In Wishlist ❤️"
         );
 
         window.location.href =
-        "wishlist.html";
+            "wishlist.html";
 
         return;
 
     }
 
     wishlist.push(
-    product
+        product
     );
 
     localStorage.setItem(
@@ -280,17 +280,17 @@ function addToWishlist(){
         wishlistKey,
 
         JSON.stringify(
-        wishlist
+            wishlist
         )
 
     );
 
     alert(
-    "Added To Wishlist ❤️"
+        "Added To Wishlist ❤️"
     );
 
     window.location.href =
-    "wishlist.html";
+        "wishlist.html";
 
 }
 

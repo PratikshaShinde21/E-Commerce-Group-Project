@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    /* font-family:'Poppins',sans-serif; */
 }
 
 body{
@@ -60,6 +60,7 @@ body{
     font-size:15px;
     box-shadow:0 3px 10px rgba(0,0,0,0.08);
 }
+
 
 #productsContainer{
     width:100%;

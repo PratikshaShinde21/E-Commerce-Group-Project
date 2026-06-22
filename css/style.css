@@ -1,115 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Playfair Display', serif;
     box-sizing: border-box;
     /* padding-top: 25px; */
 }
 body{
     padding-top:80px;
-}
-
-header .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 8%;
-    background-color: #111827;
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    z-index: 1000;
-}
-
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo-img {
-    width: 70px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-}
-
-.nav-links a:hover {
-    color: #3b82f6;
-}
-
-.menu-btn {
-    display: none;
-    cursor: pointer;
-}
-
-.menu-btn img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-
-.logo a {
-    text-decoration: none;
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.nav-links a{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-    transition: 0.3s;
-}
-
-.nav-icon{
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-}
-
-.nav-links a:hover{
-    color: #3b82f6;
-    transform: translateY(-2px);
-}
-
-/* responsive */
-@media(max-width:768px) {
-
-    .menu-btn {
-        display: block;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 75px;
-        left: 0;
-        width: 100%;
-        background: #111827;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 20px 0;
-        display: none;
-    }
-
-    .nav-links.active {
-        display: flex !important;
-    }
 }
 
 /* img slide */
@@ -527,73 +424,7 @@ header .navbar {
     padding: 0 20px 20px;
     color: #64748b;
 }
-/* footer */
-.footer {
-    background: #111827;
-    color: white;
-    padding-top: 60px;
-}
-
-.footer-logo{
-display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.footer-logo-img{
-    width: 70px;
-    height: auto;
-    object-fit: contain;
-    display: block;
-}
-
-.footer-logo h2{
-    text-decoration: none;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.footer-container {
-    width: 85%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 30px;
-        display: flex;
-    justify-content: space-between;
-}
-
-.footer-box h3 {
-    margin-bottom: 20px;
-}
-
- .footer-box p ,
-.footer-box a { 
-    display: block;
-    color: #d1d5db;
-    text-decoration: none;
-    margin-bottom: 10px;
-    line-height: 1.7;
-}
-
-.footer-box a:hover {
-    color: #2563eb;
-}
-
-.footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    border-top: 1px solid #374151;
-}
-.contact-icon{
-    width: 18px;
-    height: 18px;
-    vertical-align: middle;
-    margin-right: 8px;
-}
+  
 /* Theme Button */
 .theme-btn{
     width: 45px;
@@ -618,72 +449,6 @@ display: flex;
     background: #f2f2f2;
     transform: scale(1.1);
     box-shadow: 0 0 15px rgba(59,130,246,0.5);
-}
-
-@media (max-width: 992px){
-
-    .footer-container{
-        flex-wrap: wrap;
-        gap: 40px;
-    }
-
-    .footer-box{
-        min-width: 220px;
-    }
-}
-
-@media (max-width: 768px){
-
-    .footer{
-        padding-top: 40px;
-    }
-
-    .footer-container{
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .footer-logo{
-        justify-content: center;
-    }
-
-    .footer-box{
-        width: 100%;
-    }
-
-    .footer-box h3{
-        margin-bottom: 12px;
-    }
-
-    .footer-box a{
-        justify-content: center;
-    }
-
-    .contact-icon{
-        margin-right: 6px;
-    }
-}
-
-@media (max-width: 480px){
-
-    .footer-logo-img{
-        width: 55px;
-    }
-
-    .footer-logo h2{
-        font-size: 22px;
-    }
-
-    .footer-box p,
-    .footer-box a{
-        font-size: 14px;
-    }
-
-    .footer-bottom{
-        font-size: 14px;
-        padding: 15px;
-    }
 }
 
 /* Dark Mode */

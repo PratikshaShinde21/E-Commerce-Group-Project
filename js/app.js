@@ -1,9 +1,3 @@
-// header
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("active");
-
-    console.log(document.querySelector(".nav-links").classList);
-}
 
 // image slider
 const slides = document.querySelectorAll(".slide");
@@ -44,25 +38,40 @@ function prevSlide() {
 setInterval(nextSlide, 4000);
 
 // shop new arrival button
-function openProducts() {
-    window.location.href = "products.html";
+function goToProducts() {
+    window.location.href = "./pages/products.html";
 }
 
-// category section
-function openProducts() {
-    window.location.href = "products.html";
+function openProducts(category) {
+
+    localStorage.setItem(
+        "selectedCategory",
+        category
+    );
+
+    window.location.href =
+        "./pages/products.html";
+
 }
 
- 
+
 
 // click on img
-function openProductDetails() {
-    window.location.href = "product-details.html";
-}
-// feature product
 function addToCart(productName) {
 
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let currentUser =
+        JSON.parse(localStorage.getItem("currentUser"));
+
+    if (!currentUser) {
+        alert("Please Login First");
+        return;
+    }
+
+    let cartKey =
+        "cart_" + currentUser.mobile;
+
+    let cart =
+        JSON.parse(localStorage.getItem(cartKey)) || [];
 
     let product = {};
 
@@ -106,7 +115,8 @@ function addToCart(productName) {
         };
     }
 
-    const alreadyExists = cart.find(item => item.id === product.id);
+    const alreadyExists =
+        cart.find(item => item.id === product.id);
 
     if (alreadyExists) {
         alert("Product Already In Cart");
@@ -115,14 +125,18 @@ function addToCart(productName) {
 
     cart.push(product);
 
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem(
+        cartKey,
+        JSON.stringify(cart)
+    );
 
     alert("Added To Cart");
 }
 
 // offer
 function shopNow() {
-    window.location.href = "products.html";
+        window.location.href =
+        "./pages/products.html";
 }
 
 // newsletter
@@ -131,12 +145,12 @@ function subscribeNewsletter() {
 
     let email = document.getElementById("email").value;
 
-    if(email === "") {
+    if (email === "") {
         alert("Please enter your email address!");
         return;
     }
 
-    if(!email.includes("@") || !email.includes(".")) {
+    if (!email.includes("@") || !email.includes(".")) {
         alert("Please enter a valid email address!");
         return;
     }
@@ -147,47 +161,16 @@ function subscribeNewsletter() {
 }
 
 // frequently asked questions
-function toggleFaq(button){
+function toggleFaq(button) {
 
     const answer = button.nextElementSibling;
 
-    if(answer.style.maxHeight){
+    if (answer.style.maxHeight) {
         answer.style.maxHeight = null;
     }
-    else{
+    else {
         answer.style.maxHeight = answer.scrollHeight + "px";
     }
 
 }
 
-// dark light mode
-// Dark Mode
-
-const themeToggle = document.getElementById("themeToggle");
-const themeIcon = document.getElementById("themeIcon");
-
-// Page reload नंतर theme कायम ठेवण्यासाठी
-if(localStorage.getItem("theme") === "dark"){
-
-    document.body.classList.add("dark-mode");
-
-    themeIcon.src = "./images/sun.png";
-}
-
-themeToggle.addEventListener("click", () => {
-
-    document.body.classList.toggle("dark-mode");
-
-    if(document.body.classList.contains("dark-mode")){
-
-        localStorage.setItem("theme","dark");
-
-        themeIcon.src = "./images/sun.png";
-
-    }else{
-
-        localStorage.setItem("theme","light");
-
-        themeIcon.src = "./images/moon.png";
-    }
-});

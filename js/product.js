@@ -270,7 +270,7 @@ function addToCart(id){
         alert("Please Login First");
 
         window.location.href =
-        "register.html";
+        "login.html";
 
         return;
     }

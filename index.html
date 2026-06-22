@@ -5,6 +5,7 @@
   <title>Home page</title>
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/header.css">
 </head>
 
 <body>
@@ -24,9 +25,9 @@
         <li><a href="./pages/about.html"><img src="./images/info.png" class="nav-icon">About</a></li>
         <li><a href="./pages/cart.html"><img src="./images/card.png" class="nav-icon">Cart</a></li>
         <li>
-          <a href="./pages/login.html" class="login-btn">
+          <a href="./pages/login.html" class="login-btn" id="authBtn">
           <img src="./images/log.png" class="nav-icon">
-          <span>Login</span>
+          <span id="navAuthText">Login</span>
           </a>
         </li>
 
@@ -75,7 +76,7 @@
     <div class="slide-content">
       <h1>Upgrade Your Tech, Upgrade Your Life</h1>
       <p>Get exclusive deals on premium gadgets and electronics.</p>
-      <button onclick="openProducts()">Shop New Arrivals</button>
+      <button onclick="goToProducts()">Shop New Arrivals</button>
     </div>
 
     <button class="prev" onclick="prevSlide()">&#10094;</button>
@@ -306,6 +307,8 @@
       </div>
     </div>
   </section>
+  
+ 
 
   <!-- footer -->
   <footer class="footer">
@@ -366,6 +369,8 @@
 
 
   <script src="./js/app.js"></script>
+  <script src="./js/header.js"></script>
+  
 </body>
 
 </html>
