@@ -771,7 +771,287 @@ highlights: [
 ]
     },
     
-   
-   
+    {
+        id: 37,
+        name: "Berlin 6 Seater Right Corner Sofa | Luxury Comfort & Extra Spacious | Wooden Sofa Set for Living Room & Office (Beige - Chenile Molfino)",
+        description: "This premium sofa is designed for exceptional comfort and style, featuring a spacious seat, wide armrests, and high-density PU foam cushioning for a relaxing seating experience. Crafted with sturdy Sheesham wood legs and expert handcrafted detailing, it offers durability, elegance, and long-lasting support for your living space.",
+        originalPrice: 89282,
+        price: 26299,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/61gJgCbXGaL._SL1044_.jpg",
+            "https://m.media-amazon.com/images/I/81xgz29xdAL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71N4nLA3AhL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71hlCPjlK1L._SL1500_.jpg",
+        ],
+  highlights: [
+       "Extra Spacious Seating Design",
+    "40 Density Premium PU Foam",
+    "Durable Sheesham Wood Legs",
+    "Handcrafted Premium Finish",
+    "1 Year Manufacturer Warranty"
+]
+    },
+    
+    {
+        id: 38,
+        name: "Interio by Godrej Wardrobe, EWA 4-Door Engineered Wood Wardrobe with Mirror",
+        description: "This spacious wardrobe combines functionality and style with multiple storage compartments, an integrated mirror, and a lockable external drawer for organized living. Built with durable engineered panels and a secure locking system, it offers reliable storage and long-lasting performance for your bedroom.",
+        originalPrice: 82533,
+        price: 29490,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/71pKtlCaniL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61xM2jkhLdL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61P1tmJK6EL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61Qxw+AsLbL._SL1500_.jpg",
+        ],
+  highlights: [
+    "Integrated Full-Length Mirror",
+    "Dual Shelved Storage Compartments",
+    "Multiple Secure Locking Systems",
+    "Separate Lockable Storage Drawer",
+    "Durable Engineered Wood Construction"
+]
+    },
+    
+    {
+        id: 39,
+        name: "Sheesham Wood 45 Inch Dining Table 4 Seater | Marble Finish Four Seater Dinning Table Set with 4 Upholstered Dining Chairs | Table: Criss Cross Design | Chair: Premium Round Edge | Rosewood, Honey",
+        description: "This elegant 4-seater dining table set is crafted from premium Sheesham wood and includes a stylish dining table with four upholstered chairs. Featuring a marble-finish tabletop, sturdy criss-cross base, and cushioned seating, it combines comfort, durability, and modern design for everyday dining.",
+        originalPrice:28999 ,
+        price: 19998 ,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/915r2-u0FgL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61MeV0CEcWL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/9166bABM--L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/51pxmzvqUIL._SL1500_.jpg",
+        ],
+  highlights: [
+   "Premium Sheesham Wood Construction",
+    "4-Seater Dining Table Set",
+    "Elegant Marble-Finish Tabletop",
+    "Sturdy Criss-Cross Base Design",
+    "Comfortable Upholstered Chairs"
+]
+    },{
+        id: 40,
+        name: "Modern White Reception Desk for Office, Salon, Clinic | Luxury Front Reception Counter Table with Storage | Particle Board & Particle Board Reception Table - (RCT-034_LPB_L8W2)",
+        description: "This modern reception desk is designed to create a professional and organized workspace, featuring a spacious countertop, built-in wire management, and convenient drawer storage. Crafted from durable prelam particle board with PVC edge banding, it offers long-lasting performance, stability, and an elegant appearance for offices, clinics, salons, and commercial spaces.",
+        originalPrice:177099 ,
+        price: 74599,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/71TM9pa8KfL._SL1276_.jpg",
+            "https://m.media-amazon.com/images/I/817zYctTvQL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71waGbIxkzL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71sNMFtA2DL._SL1500_.jpg",
+        ],
+  highlights: [
+   "Spacious Reception Workstation",
+    "Built-In Wire Management System",
+    "Convenient Storage Drawer",
+    "Durable Prelam Particle Board",
+    "Modern Professional Design"
+]
+    },{
+        id: 41,
+        name: "Nesting Tables Coffee Table Set of 3, Round Center Table for Living Room and 2 End Sofa Side Table Small Accent Table for, Bedroom Apartment (Golden)",
+        description: "This elegant set of 3 nesting tables features stylish wooden tops and sturdy metal bases, adding a modern touch to any living space. Designed for versatility, they can be used as coffee tables, side tables, or accent tables, offering both functionality and sophisticated style.",
+        originalPrice: 6599,
+        price: 3599,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/81cO1QiwWLL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71fiocjyrlL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71wxlSQ-X2L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71q4Ib4pvrL._SL1500_.jpg",
+        ],
+  highlights: [
+     "Set of 3 Nesting Tables",
+    "Elegant Wooden Top Design",
+    "Durable Metal Frame Construction",
+    "Multi-Purpose Home Furniture",
+    "Easy to Clean & Maintain"
+]
+    },
+    {
+        id: 42,
+        name: "Royal Aura Upholstered King Size Bed with Box Storage for Bedroom | Elegant Wooden Double Bed with Storage | Platform Cot Palang with Tufted Headboard | 6.5 x 6 Ft | Sheesham Wood | Navy",
+        description: "This premium king-size bed is crafted from solid Sheesham wood, offering exceptional durability and timeless elegance. Featuring a luxurious upholstered headboard and spacious box storage, it combines comfort, functionality, and modern style, making it a perfect addition to any bedroom.",
+        originalPrice: 59999,
+        price: 28999,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/61x2EFI4wAL._SL1024_.jpg",
+            "https://m.media-amazon.com/images/I/614KZxNJybL._SL1024_.jpg",
+            "https://m.media-amazon.com/images/I/51KoyYtErRL._SL1024_.jpg",
+            "https://m.media-amazon.com/images/I/61x2EFI4wAL._SL1024_.jpg",
+        ],
+  highlights: [
+   "Solid Sheesham Wood Construction",
+    "King Size Bed Frame",
+    "Elegant Upholstered Headboard",
+    "Spacious Box Storage Design",
+    "Strong & Durable Build Quality"
+]
+    },
+    
+
+
+    {
+        id: 43,
+        name: "VIKI Furniture | Modular Kitchen Wall Cabinet – Acrylic Glass Door Cabinet | Space Saving Rack for Spices | DIY Home Storage Cupboard(Dark Wenge – 30D x 160W x 80H cm) | 1 Year Warranty",
+        description: "The VIKI Kitchen Cabinet is a modern and space-saving storage solution designed to keep your kitchen organized and clutter-free. Crafted from durable engineered wood with elegant transparent acrylic doors, it features spacious shelves, drawers, and compartments for convenient storage while enhancing the look of your kitchen.",
+        originalPrice: 11999,
+        price:7999,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/71o6Tz70vxL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71Viq5q5J3L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/713aNqTNaaL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71hGpbG2r2L._SL1500_.jpg",
+        ],
+  highlights: [
+    "Transparent Acrylic Doors",
+    "Spacious Multi-Storage Design",
+    "Durable Engineered Wood Build",
+    "Smooth Drawers & Hinged Doors",
+    "Modern Frosty White Finish"
+]
+    },
+    
+    {
+        id:44 ,
+        name: "SBF Furniture Engineered Wooden Book Rack,Space Saver Book Shelf for Home Living Room and Office Table Top Free Standing Organizer,Laminated Finish Modern Book Shelve (7 Tier_Brown)",
+        description: "The SBF Furniture Engineered Wood Book Rack is a stylish and space-saving storage solution designed for homes and offices. Featuring a modern laminated finish and seven spacious shelves, it provides ample room for organizing books, décor items, and essentials while enhancing the look of your living space.",
+        originalPrice: 5000,
+        price: 2999,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/71X3pqWwTGL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71G7MzxWkNL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71j9AT6EJfL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81vJstjC22L._SL1500_.jpg",
+        ],
+  highlights: [
+   "7 Spacious Storage Shelves",
+    "Premium Engineered Wood Build",
+    "Modern Laminated Finish",
+    "Space-Saving Freestanding Design",
+    "Ideal for Home & Office Use"
+]
+    },
+    
+    {
+        id: 45,
+        name: "BLUEWUD Rowlet Mini Engineering Wood Floor Standing TV Entertainment Unit Set Top Box Stand/TV Cabinet Panel with Shelves for Books & Décor Display Unit Bed Living Room Upto 42 Inches (Wenge & White)",
+        description: "This contemporary TV entertainment unit is crafted from high-quality engineered particle board with a natural wood grain finish, offering both durability and style. Designed to accommodate TVs up to 42 inches, it provides ample space for media devices, décor, and storage while enhancing your living room aesthetics.",
+        originalPrice:7999 ,
+        price: 4999,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/61rMmdLrPFL._SL1180_.jpg",
+            "https://m.media-amazon.com/images/I/814Srq2RwPL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71Pg7se9X5L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71G3VhZ3mJL._SL1400_.jpg",
+        ],
+  highlights: [
+   "Supports TVs Up to 42 Inches",
+    "Premium Engineered Wood Construction",
+    "Modern Walnut & White Finish",
+    "Spacious Storage & Display Shelves",
+    "Contemporary Space-Saving Design"
+]
+    },
+    
+    {
+        id: 46 ,
+        name: "Studio Kook Bella Engineered Wood Dressing Table (Matte Finish) (Junglewood)",
+        description: "The Studio Kook Bella Dressing Table is a stylish and functional addition to any bedroom, featuring a premium matte finish and durable engineered wood construction. Designed with a spacious tabletop and convenient storage drawer, it offers the perfect blend of elegance, organization, and everyday practicality.",
+        originalPrice: 16999 ,
+        price: 11999 ,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/71pPGKZJE2L._SL1254_.jpg",
+            "https://m.media-amazon.com/images/I/71tm36gBu-L._SL1254_.jpg",
+            "https://m.media-amazon.com/images/I/71UrG7CegDL._SL1254_.jpg",
+            "https://m.media-amazon.com/images/I/716SSQ2ArYL._SL1254_.jpg",
+        ],
+  highlights: [
+   "Premium Matte Finish Design",
+    "Durable Engineered Wood Build",
+    "Convenient Storage Drawer",
+    "Modern & Elegant Appearance",
+    "3-Year Manufacturing Warranty"
+]
+    },
+    
+    {
+        id: 47,
+        name: "Studio Kook Chelsea Engineered Wood Shoerack || Shoe Cabinet with Cushion and 20 Pairs Capacity (Matte Finish)",
+        description: "The Studio Kook Chelsea Shoe Rack is a modern and space-efficient storage solution designed to keep your footwear organized and easily accessible. Featuring a comfortable cushioned seat, spacious compartments with a 20-pair capacity, ventilation grills, and a convenient storage drawer, it combines functionality, comfort, and contemporary style.",
+        originalPrice: 15223,
+        price: 10200,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/71Ye9v9ohNL._SL1137_.jpg",
+            "https://m.media-amazon.com/images/I/71C3hutpbcL._SL1254_.jpg",
+            "https://m.media-amazon.com/images/I/71hOwrlIypL._SL1254_.jpg",
+            "https://m.media-amazon.com/images/I/71N7XlHP-sL._SL1254_.jpg",
+        ],
+  highlights: [
+ "Stores Up to 20 Pairs of Shoes",
+    "Comfortable Cushioned Seating",
+    "Built-In Ventilation Grills",
+    "Smooth Soft-Close Cabinets",
+    "Drawer with Premium Channels"  
+]
+    },
+    
+    {
+        id:48 ,
+        name: "CELLBELL C190 Berlin Office Chair, High Back Mesh Ergonomic Home Office Desk Chair (Grey - White)",
+        description: "This ergonomic mid-back office chair is designed to provide superior comfort and support during long working hours. Featuring a breathable mesh back, adjustable armrests, and pneumatic height adjustment, it combines functionality, durability, and modern style for a productive workspace.",
+        originalPrice: 12999,
+        price: 5499,
+        category: "furniture",
+        images: [
+            "https://m.media-amazon.com/images/I/61R1LRBzEaL._SL1254_.jpg",
+            "https://m.media-amazon.com/images/I/71KCFY-DGML._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61JG1sFfPYL._SL1254_.jpg",
+            "https://m.media-amazon.com/images/I/61m7id8iXkL._SL1254_.jpg",
+        ],
+  highlights: [
+    "Ergonomic Mid-Back Design",
+    "Breathable Mesh Backrest",
+    "Adjustable Armrests",
+    "Pneumatic Height Adjustment",
+    "3-Year Brand Warranty"
+]
+    },
+
+     {
+        id: 49,
+        name: "Himalaya Purifying Neem Face Wash|Clears and Prevents Pimples & Acne|Made with 5 parts of Neem|New & Best Ever clinically Proven formula|Gently Cleanses|For men and women|400 ml",
+        description: "This Neem Face Wash gently cleanses the skin, removing dirt, excess oil, and impurities while helping to prevent acne and pimples. Suitable for all skin types, its refreshing formula promotes clearer, brighter, and healthier-looking skin with regular use.",
+        originalPrice:425,
+        price: 327,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51ixwpTYK7L._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/61+xByXvt2L._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/51V16xBpPXL._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/61Rscf9Q45L._SL1100_.jpg",
+        ],
+  highlights: [
+     "Deep Cleansing Neem Formula",
+    "Helps Reduce Acne & Pimples",
+    "Controls Excess Oil",
+    "Suitable for All Skin Types",
+    "Refreshing & Skin Brightening"
+]
+    },
 ];
 

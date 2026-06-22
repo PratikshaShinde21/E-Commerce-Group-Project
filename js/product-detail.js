@@ -151,9 +151,7 @@ function decreaseQty() {
 
 }
 
-/* Buy Now */
-
-function buyNow() {
+function buyNow(){
 
     let currentUser =
         JSON.parse(
@@ -168,7 +166,11 @@ function buyNow() {
             "Please Login First"
         );
 
+        window.location.href =
+        "login.html";
+
         return;
+
     }
 
     let orderKey =
@@ -207,17 +209,14 @@ function buyNow() {
     );
 
     alert(
-        "Order Placed Successfully"
+    "Order Placed Successfully 🎉"
     );
 
     window.location.href =
         "orders.html";
 
 }
-
-/* Wishlist */
-
-function addToWishlist() {
+function addToWishlist(){
 
     let currentUser =
         JSON.parse(
@@ -232,7 +231,11 @@ function addToWishlist() {
             "Please Login First"
         );
 
+        window.location.href =
+        "login.html";
+
         return;
+
     }
 
     let wishlistKey =
@@ -251,8 +254,7 @@ function addToWishlist() {
 
             item =>
 
-                item.id ===
-                product.id
+    item.id === product.id
 
         );
 
@@ -291,6 +293,8 @@ function addToWishlist() {
         "wishlist.html";
 
 }
+
+            
 let selectedRating = 0;
 function rateProduct(rating) {
 

@@ -144,3 +144,22 @@ function toggleRegisterPassword(){
 function goToProducts(){
     window.location.href = "./products.html";
 }
+
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("theme","dark");
+
+        themeIcon.src = "../images/sun.png";
+
+    }else{
+
+        localStorage.setItem("theme","light");
+
+        themeIcon.src = "../images/moon.png";
+    }
+});
