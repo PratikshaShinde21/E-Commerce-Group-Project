@@ -545,11 +545,7 @@ function buyNow(id){
 
     let product =
     cart.find(
-
-    item =>
-
-    item.id === id
-
+    item => item.id === id
     );
 
     if(!product){
@@ -572,6 +568,24 @@ function buyNow(id){
     orderKey
     )
     ) || [];
+
+    let alreadyOrdered =
+    orders.find(
+    item => item.id === id
+    );
+
+    if(alreadyOrdered){
+
+        alert(
+        "Product Already Ordered 📦"
+        );
+
+        window.location.href =
+        "orders.html";
+
+        return;
+
+    }
 
     orders.push({
 
@@ -607,11 +621,7 @@ function buyNow(id){
 
     cart =
     cart.filter(
-
-    item =>
-
-    item.id !== id
-
+    item => item.id !== id
     );
 
     saveCart();

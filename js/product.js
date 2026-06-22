@@ -284,6 +284,24 @@ function addToCart(id){
     p => p.id === id
     );
 
+    let alreadyExists =
+    cart.find(
+    item => item.id === id
+    );
+
+    if(alreadyExists){
+
+        alert(
+        "Product Already In Cart 🛒"
+        );
+
+        window.location.href =
+        "cart.html";
+
+        return;
+
+    }
+
     cart.push(product);
 
     localStorage.setItem(
@@ -293,7 +311,7 @@ function addToCart(id){
 
     alert(
     product.name +
-    " Added To Cart"
+    " Added To Cart 🛒"
     );
 
     window.location.href =

@@ -1351,7 +1351,7 @@ highlights: [
     },  
       {
         id:64 ,
-        name: "The Boldfit Badminton Racket is designed for players who demand power, speed, and precision on the court. Its ultra-lightweight construction, aerodynamic frame, and comfortable grip provide exceptional maneuverability, control, and performance, making it ideal for both casual and competitive badminton players.",
+        name: "Boldfit Badminton Rackets Aluminium Badminton Racket with Full Cover Bag Standard Shuttle Bat Match Shuttle Bats Lightweight Badminton Shuttle Bat Aeroflex - Red Set",
         description: "The Boldfit Badminton Racket is designed for players who demand power, speed, and precision on the court. Its ultra-lightweight construction, aerodynamic frame, and comfortable grip provide exceptional maneuverability, control, and performance, making it ideal for both casual and competitive badminton players.",
         originalPrice:2499,
         price: 649,

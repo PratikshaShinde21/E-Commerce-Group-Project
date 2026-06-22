@@ -306,8 +306,25 @@ function moveToCart(index){
     )
     ) || [];
 
+    let product =
+    wishlist[index];
+
+    let alreadyExists =
+    cart.find(
+    item => item.id === product.id
+    );
+
+    if(alreadyExists){
+ alert(
+    "Product Already In Cart"
+    );
+
+        return;
+
+    }
+
     cart.push(
-        wishlist[index]
+    product
     );
 
     localStorage.setItem(
@@ -321,8 +338,8 @@ function moveToCart(index){
     );
 
     wishlist.splice(
-        index,
-        1
+    index,
+    1
     );
 
     saveWishlist();
@@ -330,11 +347,10 @@ function moveToCart(index){
     renderWishlist();
 
     showToast(
-        "Moved To Cart"
+    "Moved To Cart 🛒"
     );
 
 }
-
 loadWishlist();
 renderWishlist();
 

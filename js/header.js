@@ -24,18 +24,37 @@ if(authBtn){
     authBtn.addEventListener("click", function(e){
 
         const currentUser =
-        JSON.parse(localStorage.getItem("currentUser"));
+        JSON.parse(
+        localStorage.getItem("currentUser")
+        );
 
         if(currentUser){
 
             e.preventDefault();
 
-            localStorage.removeItem("currentUser");
+            localStorage.removeItem(
+            "currentUser"
+            );
 
-            alert("Logged Out Successfully");
+            alert(
+            "Logged Out Successfully"
+            );
+let path =
+    window.location.pathname;
 
-            window.location.href = "./login.html";
+    if(path.endsWith("index.html")){
+
+        window.location.href =
+        "./pages/login.html";
+
+    }else{
+
+        window.location.href =
+        "login.html";
+
+    }
         }
+
     });
 
 }

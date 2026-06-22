@@ -154,16 +154,16 @@ function decreaseQty() {
 function buyNow(){
 
     let currentUser =
-        JSON.parse(
-            localStorage.getItem(
-                "currentUser"
-            )
-        );
+    JSON.parse(
+    localStorage.getItem(
+    "currentUser"
+    )
+    );
 
-    if (!currentUser) {
+    if(!currentUser){
 
         alert(
-            "Please Login First"
+        "Please Login First"
         );
 
         window.location.href =
@@ -174,27 +174,53 @@ function buyNow(){
     }
 
     let orderKey =
-        "orders_" +
-        currentUser.mobile;
+    "orders_" +
+    currentUser.mobile;
 
     let orders =
-        JSON.parse(
-            localStorage.getItem(
-                orderKey
-            )
-        ) || [];
+    JSON.parse(
+    localStorage.getItem(
+    orderKey
+    )
+    ) || [];
+
+    let alreadyOrdered =
+    orders.find(
+    item => item.id === product.id
+    );
+
+    if(alreadyOrdered){
+
+        alert(
+        "Product Already Ordered"
+        );
+
+        window.location.href =
+        "orders.html";
+
+        return;
+
+    }
 
     orders.push({
 
-        id: product.id,
+        id:
+        product.id,
 
-        name: product.name,
+        name:
+        product.name,
 
-        price: product.price,
+        price:
+        product.price,
 
-        image: product.images[0],
+        image:
+        product.images[0],
 
-        quantity: quantity
+        quantity:
+        quantity,
+
+        status:
+        "Order Placed"
 
     });
 
@@ -203,7 +229,7 @@ function buyNow(){
         orderKey,
 
         JSON.stringify(
-            orders
+        orders
         )
 
     );
@@ -213,7 +239,7 @@ function buyNow(){
     );
 
     window.location.href =
-        "orders.html";
+    "orders.html";
 
 }
 function addToWishlist(){
@@ -335,6 +361,9 @@ function rateProduct(rating) {
     if (!currentUser) {
 
         alert("Please Login First");
+        window.location.href =
+    "login.html";
+
         return;
 
     }
