@@ -2,78 +2,42 @@ let cart = [];
 
 let discountAmount = 0;
 
-function loadCart(){
+function loadCart() {
+  let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-    let currentUser =
-    JSON.parse(
-    localStorage.getItem(
-    "currentUser"
-    )
-    );
+  if (!currentUser) {
+    cart = [];
 
-    if(!currentUser){
+    return;
+  }
 
-        cart = [];
+  let cartKey = "cart_" + currentUser.mobile;
 
-        return;
-
-    }
-
-    let cartKey =
-    "cart_" +
-    currentUser.mobile;
-
-    cart =
-    JSON.parse(
-    localStorage.getItem(
-    cartKey
-    )
-    ) || [];
-
+  cart = JSON.parse(localStorage.getItem(cartKey)) || [];
 }
 
-function saveCart(){
+function saveCart() {
+  let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-    let currentUser =
-    JSON.parse(
-    localStorage.getItem(
-    "currentUser"
-    )
-    );
+  if (!currentUser) {
+    return;
+  }
 
-    if(!currentUser){
+  let cartKey = "cart_" + currentUser.mobile;
 
-        return;
+  localStorage.setItem(
+    cartKey,
 
-    }
+    JSON.stringify(cart),
+  );
+}
+function displayCart() {
+  const cartContainer = document.getElementById("cart-container");
 
-    let cartKey =
-    "cart_" +
-    currentUser.mobile;
+  cartContainer.innerHTML = "";
 
-    localStorage.setItem(
-
-        cartKey,
-
-        JSON.stringify(
-        cart
-        )
-
-    );
-
-}function displayCart(){
-
-    const cartContainer =
-    document.getElementById(
-    "cart-container"
-    );
-
-    cartContainer.innerHTML =
-    "";
-
-    if(cart.length === 0){
-
-        cartContainer.innerHTML = `
+  if (cart.length === 0) {
+    cartContainer.innerHTML = `
 
         <div class="empty-cart-box">
 
@@ -97,20 +61,18 @@ function saveCart(){
 
         `;
 
-        updateSummary();
+    updateSummary();
 
-        return;
+    return;
+  }
 
-    }
-
-    cart.forEach(item=>{
-
-        cartContainer.innerHTML += `
+  cart.forEach((item) => {
+    cartContainer.innerHTML += `
 
         <div class="cart-item">
 
             <img
-            src="${item.image || item.images?.[0] || ''}"
+            src="${item.image || item.images?.[0] || ""}"
             alt="${item.name}">
 
             <div class="product-info">
@@ -158,227 +120,136 @@ function saveCart(){
         </div>
 
         `;
+  });
 
-    });
+  updateSummary();
+}
+function removeItem(id) {
+  cart = cart.filter((item) => item.id !== id);
 
-    updateSummary();
+  saveCart();
 
-}function removeItem(id){
+  displayCart();
+}
+const addButtons = document.querySelectorAll(".add-cart");
 
-    cart =
-    cart.filter(
-
-    item =>
-
-    item.id !== id
-
-    );
-
-    saveCart();
-
-    displayCart();
-
-}const addButtons =
-document.querySelectorAll(
-".add-cart"
-);
-
-addButtons.forEach(
-
-(button,index)=>{
-
-    button.addEventListener(
-
+addButtons.forEach((button, index) => {
+  button.addEventListener(
     "click",
 
-    ()=>{
+    () => {
+      const product = recommendedProducts[index];
 
-        const product =
-        recommendedProducts[index];
+      const alreadyExists = cart.find((item) => item.id === product.id);
 
-        const alreadyExists =
-        cart.find(
+      if (alreadyExists) {
+        alert("Product Already In Cart");
 
-        item =>
+        return;
+      }
 
-        item.id === product.id
+      cart.push(product);
 
-        );
+      saveCart();
 
-        if(alreadyExists){
+      displayCart();
 
-            alert(
-            "Product Already In Cart"
-            );
+      button.innerHTML = "Added";
 
-            return;
+      setTimeout(() => {
+        button.innerHTML = "Add To Cart";
+      }, 1500);
+    },
+  );
+});
+function updateSummary() {
+  let subtotal = 0;
 
-        }
+  cart.forEach((item) => {
+    subtotal += item.price;
+  });
 
-        cart.push(
-        product
-        );
+  let tax = Math.floor(subtotal * 0.05);
 
-        saveCart();
+  let total = subtotal + tax - discountAmount;
 
-        displayCart();
+  if (total < 0) {
+    total = 0;
+  }
 
-        button.innerHTML =
-        "Added";
+  document.getElementById("subtotal").innerText = `₹${subtotal}`;
 
-        setTimeout(()=>{
+  document.getElementById("discount").innerText = `₹${discountAmount}`;
 
-            button.innerHTML =
-            "Add To Cart";
+  document.getElementById("tax").innerText = `₹${tax}`;
 
-        },1500);
+  document.getElementById("total").innerText = `₹${total}`;
+}
+document.getElementById("applyCoupon").addEventListener(
+  "click",
 
-    });
-
-});function updateSummary(){
-
-    let subtotal = 0;
-
-    cart.forEach(item=>{
-
-        subtotal +=
-        item.price;
-
-    });
-
-    let tax =
-    Math.floor(
-    subtotal * 0.05
-    );
-
-    let total =
-    subtotal +
-    tax -
-    discountAmount;
-
-    if(total < 0){
-
-        total = 0;
-
-    }
-
-    document
-    .getElementById(
-    "subtotal"
-    )
-    .innerText =
-    `₹${subtotal}`;
-
-    document
-    .getElementById(
-    "discount"
-    )
-    .innerText =
-    `₹${discountAmount}`;
-
-    document
-    .getElementById(
-    "tax"
-    )
-    .innerText =
-    `₹${tax}`;
-
-    document
-    .getElementById(
-    "total"
-    )
-    .innerText =
-    `₹${total}`;
-
-}document
-.getElementById(
-"applyCoupon"
-)
-.addEventListener(
-
-"click",
-
-()=>{
-
-    const code =
-    document
-    .getElementById(
-    "couponInput"
-    )
-    .value
-    .trim()
-    .toUpperCase();
+  () => {
+    const code = document
+      .getElementById("couponInput")
+      .value.trim()
+      .toUpperCase();
 
     let subtotal = 0;
 
-    cart.forEach(item=>{
-
-        subtotal +=
-        item.price;
-
+    cart.forEach((item) => {
+      subtotal += item.price;
     });
 
-    if(code === "SAVE10"){
+    if (code === "SAVE10") {
+      discountAmount = Math.floor(subtotal * 0.1);
 
-        discountAmount =
-        Math.floor(
-        subtotal * 0.10
-        );
+      alert("10% Discount Applied");
+    } else if (code === "SAVE20") {
+      discountAmount = Math.floor(subtotal * 0.2);
 
-        alert(
-        "10% Discount Applied"
-        );
+      alert("20% Discount Applied");
+    } else {
+      discountAmount = 0;
 
-    }
-
-    else if(code === "SAVE20"){
-
-        discountAmount =
-        Math.floor(
-        subtotal * 0.20
-        );
-
-        alert(
-        "20% Discount Applied"
-        );
-
-    }
-
-    else{
-
-        discountAmount = 0;
-
-        alert(
-        "Invalid Coupon Code"
-        );
-
+      alert("Invalid Coupon Code");
     }
 
     updateSummary();
+  },
+);
+document.getElementById("checkoutBtn").addEventListener(
+  "click",
 
-});document
-.getElementById(
-"checkoutBtn"
-)
-.addEventListener(
-
-"click",
-
-()=>{
+  () => {
 
     if(cart.length === 0){
-
-        alert(
-        "Cart Is Empty"
-        );
-
-        return;
-
+      alert("Cart Is Empty");
+      return;
     }
 
-    alert(
-    "🎉 Order Placed Successfully"
+    let currentUser =
+    JSON.parse(localStorage.getItem("currentUser"));
+
+    if(!currentUser){
+      alert("Please Login First");
+      return;
+    }
+
+    let orderKey =
+    "orders_" + currentUser.mobile;
+
+    let orders =
+    JSON.parse(localStorage.getItem(orderKey))
+    || [];
+
+    orders.push(...cart);
+
+    localStorage.setItem(
+      orderKey,
+      JSON.stringify(orders)
     );
+
+    alert("🎉 Order Placed Successfully");
 
     cart = [];
 
@@ -386,85 +257,62 @@ addButtons.forEach(
 
     displayCart();
 
+    window.location.href = "order.html";
+  }
+);
 
-});
+function buyNow(id) {
+  let currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
-function buyNow(id){
+  if (!currentUser) {
+    alert("Please Login First");
 
-    let currentUser =
-    JSON.parse(
-    localStorage.getItem(
-    "currentUser"
-    )
-    );
+    return;
+  }
 
-    if(!currentUser){
+  let product = cart.find((item) => item.id === id);
 
-        alert(
-        "Please Login First"
-        );
+  if (!product) {
+    return;
+  }
 
-        return;
+  let orderKey = "orders_" + currentUser.mobile;
 
-    }
+  let orders = JSON.parse(localStorage.getItem(orderKey)) || [];
 
-    let product =
-    cart.find(
+  orders.push(product);
 
-    item =>
+  localStorage.setItem(
+    orderKey,
 
-    item.id === id
+    JSON.stringify(orders),
+  );
 
-    );
+  let latestOrders =
+JSON.parse(
+localStorage.getItem(
+"latestOrders"
+)
+) || [];
 
-    if(!product){
+latestOrders.push(
+product
+);
 
-        return;
+localStorage.setItem(
+"latestOrders",
+JSON.stringify(
+latestOrders
+)
+); 
 
-    }
+  cart = cart.filter((item) => item.id !== id);
 
-    let orderKey =
-    "orders_" +
-    currentUser.mobile;
+  saveCart();
 
-    let orders =
-    JSON.parse(
-    localStorage.getItem(
-    orderKey
-    )
-    ) || [];
+  displayCart();
 
-    orders.push(
-    product
-    );
-
-    localStorage.setItem(
-
-        orderKey,
-
-        JSON.stringify(
-        orders
-        )
-
-    );
-
-    cart =
-    cart.filter(
-
-    item =>
-
-    item.id !== id
-
-    );
-
-    saveCart();
-
-    displayCart();
-
-    alert(
-    "🎉 Order Placed Successfully"
-    );
-
+  alert("🎉 Order Placed Successfully");
 }
 
 loadCart();

@@ -338,3 +338,127 @@ function moveToCart(index){
 loadWishlist();
 renderWishlist();
 
+// select all
+document.getElementById("selectAllToggle")
+.addEventListener("change", function(){
+
+    wishlist.forEach(item => {
+        item.selected = this.checked;
+    });
+
+    saveWishlist();
+    renderWishlist();
+});
+
+// single product selcet 
+function toggleSelect(index){
+
+    wishlist[index].selected =
+    !wishlist[index].selected;
+
+    saveWishlist();
+
+    renderWishlist();
+}
+
+// delete selected
+document.getElementById("deleteSelectedBtn")
+.addEventListener("click", function(){
+
+    wishlist =
+    wishlist.filter(item => !item.selected);
+
+    saveWishlist();
+
+    renderWishlist();
+
+    showToast("Selected Products Deleted");
+});
+
+// sort product 
+document.getElementById("sortSelect")
+.addEventListener("change", function () {
+
+    let sortedWishlist = [...wishlist];
+
+    if(this.value === "name-asc"){
+        sortedWishlist.sort((a,b) =>
+            a.name.localeCompare(b.name)
+        );
+    }
+
+    else if(this.value === "name-desc"){
+        sortedWishlist.sort((a,b) =>
+            b.name.localeCompare(a.name)
+        );
+    }
+
+    else if(this.value === "price-low"){
+        sortedWishlist.sort((a,b) =>
+            a.price - b.price
+        );
+    }
+
+    else if(this.value === "price-high"){
+        sortedWishlist.sort((a,b) =>
+            b.price - a.price
+        );
+    }
+
+    renderWishlist(sortedWishlist);
+
+});
+
+// share btn
+document.getElementById("shareWishlistBtn")
+.addEventListener("click", function(){
+
+    if(navigator.share){
+
+        navigator.share({
+            title:"My Wishlist",
+            text:"Check my wishlist",
+            url:window.location.href
+        });
+
+    }else{
+        alert("Sharing not supported");
+    }
+
+});
+
+// copy link
+document.getElementById("copyLinkBtn")
+.addEventListener("click", function(){
+
+    navigator.clipboard.writeText(
+        window.location.href
+    );
+
+    alert("Link Copied");
+
+});
+// share product btn
+function shareProduct(index){
+
+    let product = wishlist[index];
+
+    let text =
+    product.name +
+    " - ₹" +
+    product.price;
+
+    if(navigator.share){
+
+        navigator.share({
+            title: product.name,
+            text: text
+        });
+
+    }else{
+
+        navigator.clipboard.writeText(text);
+
+        alert("Product details copied");
+    }
+}

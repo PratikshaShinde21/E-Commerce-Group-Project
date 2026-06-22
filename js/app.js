@@ -4,31 +4,31 @@ const slides = document.querySelectorAll(".slide");
 
 let currentSlide = 0;
 
-function showSlide(index) {
+function showSlide(index){
 
-    slides.forEach((slide) => {
+    slides.forEach(slide =>{
         slide.classList.remove("active");
     });
 
     slides[index].classList.add("active");
 }
 
-function nextSlide() {
+function nextSlide(){
 
     currentSlide++;
 
-    if (currentSlide >= slides.length) {
+    if(currentSlide >= slides.length){
         currentSlide = 0;
     }
 
     showSlide(currentSlide);
 }
 
-function prevSlide() {
+function prevSlide(){
 
     currentSlide--;
 
-    if (currentSlide < 0) {
+    if(currentSlide < 0){
         currentSlide = slides.length - 1;
     }
 
@@ -64,6 +64,8 @@ function addToCart(productName) {
 
     if (!currentUser) {
         alert("Please Login First");
+                window.location.href =
+        "./pages/login.html";
         return;
     }
 
