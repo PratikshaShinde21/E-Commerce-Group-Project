@@ -1,3 +1,70 @@
+const recommendedProducts = [
+
+    {
+        id: 1,
+        name: "Gaming Headset",
+        price: 1899,
+        oldPrice: 2200,
+        image: "../images/gaminghandset.webp"
+    },
+
+    {
+        id: 2,
+        name: "Smart Watch",
+        price: 2999,
+        oldPrice: 3500,
+        image: "../images/smartwatch.webp"
+    },
+
+    {
+        id: 3,
+        name: "Wireless Earbuds",
+        price: 1499,
+        oldPrice: 1900,
+        image: "../images/wireless earbuds.webp"
+    },
+
+    {
+        id: 4,
+        name: "Denim Jacket",
+        price: 2199,
+        oldPrice: 2600,
+        image: "../images/denim jacket.avif"
+    },
+
+    {
+        id: 5,
+        name: "Sports Shoes",
+        price: 2499,
+        oldPrice: 3000,
+        image: "../images/shoessport.webp"
+    },
+
+    {
+        id: 6,
+        name: "Leather Bag",
+        price: 1699,
+        oldPrice: 2100,
+        image: "../images/leather bag.jpg"
+    },
+
+    {
+        id: 7,
+        name: "Premium Shirt",
+        price: 999,
+        oldPrice: 1400,
+        image: "../images/premiumshirt.jpg"
+    },
+
+    {
+        id: 8,
+        name: "Bluetooth Speaker",
+        price: 1999,
+        oldPrice: 2500,
+        image: "../images/bluetoothe speaker.webp"
+    }
+
+];
 let cart = [];
 
 let discountAmount = 0;
@@ -376,21 +443,6 @@ addButtons.forEach(
 
     }
 
-    alert(
-    "🎉 Order Placed Successfully"
-    );
-
-    cart = [];
-
-    saveCart();
-
-    displayCart();
-
-
-});
-
-function buyNow(id){
-
     let currentUser =
     JSON.parse(
     localStorage.getItem(
@@ -408,6 +460,89 @@ function buyNow(id){
 
     }
 
+    let orderKey =
+    "orders_" +
+    currentUser.mobile;
+
+    let orders =
+    JSON.parse(
+    localStorage.getItem(
+    orderKey
+    )
+    ) || [];
+
+    cart.forEach(item=>{
+
+        orders.push({
+
+            id:
+            item.id,
+
+            name:
+            item.name,
+
+            price:
+            item.price,
+
+            image:
+            item.image ||
+            item.images?.[0],
+
+            quantity:1,
+
+            status:
+            "Order Placed"
+
+        });
+
+    });
+
+    localStorage.setItem(
+
+        orderKey,
+
+        JSON.stringify(
+        orders
+        )
+
+    );
+
+    cart = [];
+
+    saveCart();
+
+    displayCart();
+
+    alert(
+    "🎉 Order Placed Successfully"
+    );
+
+    window.location.href =
+    "orders.html";
+
+});
+function buyNow(id){
+
+    let currentUser =
+    JSON.parse(
+    localStorage.getItem(
+    "currentUser"
+    )
+    );
+
+    if(!currentUser){
+
+        alert(
+        "Please Login First"
+        );
+
+        window.location.href =
+        "login.html";
+
+        return;
+
+    }
+
     let product =
     cart.find(
 
@@ -418,6 +553,10 @@ function buyNow(id){
     );
 
     if(!product){
+
+        alert(
+        "Product Not Found"
+        );
 
         return;
 
@@ -434,9 +573,27 @@ function buyNow(id){
     )
     ) || [];
 
-    orders.push(
-    product
-    );
+    orders.push({
+
+        id:
+        product.id,
+
+        name:
+        product.name,
+
+        price:
+        product.price,
+
+        image:
+        product.image ||
+        product.images?.[0],
+
+        quantity:1,
+
+        status:
+        "Order Placed"
+
+    });
 
     localStorage.setItem(
 
@@ -465,8 +622,10 @@ function buyNow(id){
     "🎉 Order Placed Successfully"
     );
 
-}
+    window.location.href =
+    "orders.html";
 
+}
 loadCart();
 
 displayCart();

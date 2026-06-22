@@ -445,8 +445,8 @@ const products = [
     },
     {
         id: 22,
-        name: "EFERMONE® Polarized Sunglasses for Men and Women 100% UV Protection Outdoor Travelling Sports Bikes Cars Driving and Hiking (Square | Medium)",
-        description: "These stylish square-frame sunglasses feature premium polarized lenses and 100% UV protection for superior eye safety and visual clarity. Built with a durable frame and versatile design, they are perfect for driving, travelling, biking, hiking, and everyday outdoor use.",
+        name: "Yash Gallery Women's Rayon Regular Fit Top",
+        description: "This stylish women's printed top is crafted from a soft and breathable viscose blend fabric, offering all-day comfort and effortless style. Featuring a trendy striped pattern, round neckline, and regular fit silhouette, it is perfect for casual outings, everyday wear, and modern wardrobe styling.",
         originalPrice: 1399,
         price: 459,
         category: "fashion",
@@ -1053,5 +1053,491 @@ highlights: [
     "Refreshing & Skin Brightening"
 ]
     },
+    
+  {
+        id: 50,
+        name: "LAKMÉ Powerplay Priming Foundation Liquid, Natural, Flawless Finish, Medium To Full Coverage, Built in Primer, Long Lasting, SPF 20, Warm Natural, 25ml",
+        description: "Lakmé 9to5 Powerplay Priming Foundation combines the benefits of a built-in primer and matte foundation to deliver a smooth, natural, and flawless finish. With medium-to-high buildable coverage, SPF 20 protection, and a long-wear formula, it keeps your skin looking fresh and even-toned throughout the day.",
+        originalPrice:475,
+        price: 336,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51gHh3Ate0L._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61p2HKYvhKL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51AeybkR4zL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61ctOwl15GL._SL1000_.jpg",
+        ],
+  highlights: [
+    "Built-In Primer + Foundation",
+    "Natural Matte Finish",
+    "Medium to High Coverage",
+    "SPF 20 Sun Protection",
+    "Long-Lasting Wear Formula"
+]
+    },
+    {
+        id: 51,
+        name: "L'Oreal Paris Total Repair 5 Shampoo, For Repairing 5 Signs Of Damaged Hair, With Keratin Xs | 800Ml",
+        description: "L'Oréal Paris Total Repair 5 Shampoo is specially formulated to repair and strengthen damaged hair while addressing the five visible signs of hair damage—hair fall, dryness, roughness, dullness, and split ends. Enriched with Pro-Keratin and Ceramide, it nourishes hair fibers, leaving them smoother, stronger, softer, and visibly healthier.",
+        originalPrice:849,
+        price:575 ,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/41v6C99P8ZL._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/61RafejMf9L._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/619hLTgGfOL._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/61rKoIu932L._SL1080_.jpg",
+        ],
+  highlights: [
+    "Repairs 5 Signs of Hair Damage",
+    "Enriched with Pro-Keratin",
+    "Strengthens Hair Fibers",
+    "Reduces Dryness & Roughness",
+    "Leaves Hair Soft & Shiny"
+]
+    },
+    {
+        id: 52,
+        name: "Ramsons - U R LOVELY Eau De Parfum | 30 ML | Perfume For Women | TN - Bergamot, Peach, Orange, Grapefruit, Aquatic | MN - Lilly of the valley, Rose, Jasmine, Cinnamon | BN - Woody, Musk, Vanilla",
+        description: "U R Lovely Eau De Parfum is a premium fragrance for women that blends refreshing fruity and green notes with elegant floral jasmine and warm musk-vanilla undertones. Designed for long-lasting freshness, it delivers a sophisticated and captivating aroma that keeps you feeling confident throughout the day.",
+        originalPrice:175,
+        price: 135,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51F0w9n6y5L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/51S4v1QVMTL._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/61PBd77EpCL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/610ZweQP32L._SL1500_.jpg",
+        ],
+  highlights: [
+     "Long-Lasting Premium Fragrance",
+    "Refreshing Fruity Top Notes",
+    "Elegant Floral Jasmine Heart",
+    "Warm Musk & Vanilla Base",
+    "Perfect for Everyday & Special Occasions"
+]
+    },
+    {
+        id: 53,
+        name: "NIVEA Nourishing Body Milk 600ml Body Lotion with Hyaluronic Acid | 72Hr Hydration | Deep Moisture Care for Very Dry Skin | Enriched with Almond Oil | Smooth, Radiant & Healthy Looking Skin Care",
+        description: "NIVEA Deep Moisture Body Lotion is enriched with Deep Moisture Serum, Almond Oil, and Vitamin E to provide intense hydration and nourishment for very dry skin. Its fast-absorbing formula helps repair dryness from deep within, leaving the skin soft, smooth, and moisturized for up to 48 hours.",
+        originalPrice:799,
+        price: 362,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/61oRWpJlTVL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51pZ+Tl7RrL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61R5EUtcv5L._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51ulnm2BmFL._SL1000_.jpg",
+        ],
+  highlights: [
+     "48-Hour Deep Moisturization",
+    "Enriched with Almond Oil",
+    "Contains Nourishing Vitamin E",
+    "Repairs Dry & Rough Skin",
+    "Suitable for Daily Use"
+]
+    },
+    {
+        id: 54,
+        name: "LAKMÉ LAKM Lakme Powerplay Priming Matte Lipstick, Smooth Finish, Lightweight Smudgeproof, Lasts 16hrs, Hydrates Lips, Burgundy Passion, 3.6g",
+        description: "This long-lasting matte lipstick delivers intense color payoff with a smooth, comfortable finish that lasts up to 14 hours. Infused with 2X primer technology, it glides effortlessly on the lips, providing a flawless matte look without the need for frequent touch-ups.",
+        originalPrice:625,
+        price: 325,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51hrMevDh2L._SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/41ymlWQsMPL._SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61zi2bFQhyL._SL1200_.jpg",
+            "https://m.media-amazon.com/images/I/61UOtyCDo1L._SL1200_.jpg",
+        ],
+  highlights: [
+     "Up to 14 Hours Matte Wear",
+    "2X Primer-Enriched Formula",
+    "Intense Color Payoff",
+    "Smooth & Comfortable Application",
+    "No Frequent Touch-Ups Needed"
+]
+    },
+    {
+        id: 55,
+        name: "TRESemme Keratin Smooth Conditioner 190ml With Keratin Protein and Argan Oil | Salon-Like Smooth Hair | Up To 72H Frizz Contro",
+        description: "TRESemmé Keratin Smooth Shampoo is specially formulated with Keratin Protein and Argan Oil to deliver salon-like smoothness and frizz control for up to 72 hours. Powered by patented Micro-Smooth Technology, it nourishes hair deeply, leaving it silky, manageable, and beautifully smooth every day.",
+        originalPrice:220,
+        price: 206,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51CQAIkoEEL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/515GYrCT6oL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61tiODbRDwL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61-7853LTVL._SL1000_.jpg",
+        ],
+  highlights: [
+    "Up to 72 Hours Frizz Control",
+    "Infused with Keratin & Argan Oil",
+    "Patented Micro-Smooth Technology",
+    "Salon-Like Smooth Hair",
+    "100% Paraben-Free Formula"
+]
+    },
+    {
+        id: 56,
+        name: "Vaseline Gluta-Hya Flawless Glow Lotion for Face & Body | Gives Brighter Skin | Glutathione & Pro-Retinol Infused Moisturizer, 200ml",
+        description: "Vaseline Gluta-Hya Serum Burst Lotion is a lightweight, fast-absorbing moisturizer that helps brighten dull skin while providing deep hydration. Enriched with Glutathione, Pro-Retinol, and Hyaluron, it nourishes, smoothens, and enhances skin radiance, leaving your skin soft, even-toned, and glowing from the first use.",
+        originalPrice:350,
+        price:250 ,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51tw0F-idVL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51ziskaxkPL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51lO7HMYssL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/613wH4bFiwL._SL1000_.jpg",
+        ],
+  highlights: [
+      "GlutaGlow Brightening Technology",
+    "Enriched with Glutathione",
+    "Contains Pro-Retinol & Hyaluron",
+    "Deep Hydration & Skin Glow",
+    "Non-Sticky & Fast Absorbing"
+]
+    },
+    {
+        id: 57,
+        name: "Lakme SPF 50 PA++++ Sunscreen Lotion for Bright Skin | In Vivo Tested | UVA UVB Blue Light Protection | Waterlight| No White Cast | Niacinamide| For All Skin Types | 100 ml",
+        description: "This SPF 50 PA++++ sunscreen is clinically tested to provide advanced protection against UVA, UVB, and blue light exposure. Enriched with a brightening complex and Squalane, it helps reduce tanning, improve skin tone, strengthen the moisture barrier, and deliver a lightweight matte finish with no white cast.",
+        originalPrice:669,
+        price: 331,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51+gSgH2c4L._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61L8kyGEFQL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61M95PqeiFL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/71mvsZptd+L._SL1000_.jpg",
+        ],
+  highlights: [
+    "SPF 50 PA++++ Protection",
+    "Helps Reduce Tan & Dark Spots",
+    "Invisible Matte Finish",
+    "No White Cast Formula",
+    "Squalane for Barrier Repair"
+]
+    },
+    {
+        id: 58,
+        name: "Lakme 9to5 Hya Matte Pressed Powder Ivory 9gm",
+        description: "Lakmé Hya Matte Pressed Powder is a hydrating compact powder infused with Hyaluronic Acid that delivers a smooth, breathable matte finish while keeping skin comfortable throughout the day. With up to 16 hours of oil control and buildable coverage, it helps blur pores, fine lines, and imperfections for a flawless, natural-looking complexion.",
+        originalPrice:699,
+        price:503 ,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/610n6ih9jrL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61qCCRzeA4L._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/41DD5vGY2LL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/618nq0w4iFL._SL1000_.jpg",
+        ],
+  highlights: [
+    "Infused with Hyaluronic Acid",
+    "Up to 16 Hours Oil Control",
+    "Smooth Matte Finish",
+    "Blurs Pores & Fine Lines",
+    "Medium to Buildable Coverage"
+]
+    },
+    {
+        id:59 ,
+        name: "Streax Frizz Control Hair Serum for Dry Frizzy Hair- 100 ml, 72hrs Frizz Free Hair, For Women & Men, With Bio – Elixir, 84% Frizz Reduction & 11X smoothness",
+        description: "Streax Frizz Control Hair Serum is specially formulated to tame dry, frizzy hair while delivering intense nourishment and shine. Enriched with the Bio-Elixir Complex and a blend of 12 nutrient-rich oils, it helps reduce frizz, smoothen hair, and enhance manageability without leaving a greasy residue, making it perfect for everyday use.",
+        originalPrice:320,
+        price:220 ,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/51OYUiuvyvL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61O68YsWuDL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/71+WItznUCL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71cLMbgemXL._SL1500_.jpg",
+        ],
+  highlights: [
+     "Controls Frizz & Dryness",
+    "Enriched with Bio-Elixir Complex",
+    "12 Nourishing Natural Oils",
+    "Lightweight Non-Greasy Formula",
+    "Suitable for All Hair Types"
+]
+    },
+    {
+        id:60 ,
+        name: "NIVEA Pearl and Beauty 50ml Deo Underarm Roll On | With Pearl Extracts & Avocado Oil | 72 H Long Lasting Floral Scent | 0% Alcohol and Dermat Approved | For Women",
+        description: "This gentle deodorant provides up to 48 hours of odor protection while keeping you feeling fresh and confident throughout the day. Enriched with pearl extracts and anti-microbial agents, it helps maintain even-toned underarms, controls odor-causing bacteria, and cares for delicate skin with its alcohol-free formula.",
+        originalPrice:249,
+        price: 149,
+        category: "beauty",
+        images: [
+            "https://m.media-amazon.com/images/I/41D6xYA74xL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61hHAA2YkLL._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/61OFA+Y89-L._SL1000_.jpg",
+            "https://m.media-amazon.com/images/I/51SBWtqp0RL._SL1000_.jpg",
+        ],
+  highlights: [
+    "48-Hour Odor Protection",
+    "Enriched with Pearl Extracts",
+    "Alcohol-Free Gentle Formula",
+    "Helps Maintain Even Skin Tone",
+    "Long-Lasting Fresh Fragrance"
+]
+    },  
+    
+     {
+        id: 61,
+        name: "House Home Building Blocks - 72Pcs(Block) + 20pcs(Window) Mega Jumbo Blocks with Attractive Windows and Smooth Rounded Edges, Building Blocks Toys Games for Kids, Best Gift (Multicolor)",
+        description: "This educational building block set allows children to create multiple houses and structures in various shapes and sizes while having fun. Designed with safe, smooth-edged pieces, it encourages creativity, critical thinking, problem-solving, and hands-on learning, making it an ideal toy for developing essential cognitive and social skills.",
+        originalPrice:599,
+        price: 272,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/516mpe4VhrL.jpg",
+            "https://m.media-amazon.com/images/I/51zfZY6gbGL.jpg",
+            "https://m.media-amazon.com/images/I/71RFj19yqPS._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61BAU0ppRIL._SL1500_.jpg",
+        ],
+  highlights: [
+     "Creative Home Building Block Set",
+    "Safe Smooth-Edge Construction",
+    "Enhances Problem-Solving Skills",
+    "Develops Creativity & Imagination",
+    "Improves Hand-Eye Coordination"
+]
+    }, 
+      {
+        id: 62,
+        name: "Gooyo GY-6328-13 Hi-Speed Racing Car Toy with 3D Lighting Feature | 3D Lights Famous Remote Control Car Toy for Kids | Blue | 3xAA Battery (Not Included) | Gift Box Packaging",
+        description: "This 3D Remote Control Racing Car is designed to deliver exciting stunt action and endless entertainment for kids. Featuring multi-directional controls, spinning wheels, and a durable scratch-resistant body, it helps improve coordination, attention, and motor skills while providing hours of fun both indoors and outdoors",
+        originalPrice:799,
+        price: 399,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/7144M0JhZYL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71wvDdGaNtL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61AsT+ea7TL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71ZET3gQZGL._SL1500_.jpg",
+        ],
+    highlights: [
+    "3D Stunt Racing Car Design",
+    "360° Spins & Cool Stunt Actions",
+    "Easy-to-Use Remote Control",
+    "Durable ABS Plastic Body",
+    "Perfect Gift for Kids"
+]
+    },  
+      {
+        id:63 ,
+        name: "Funskool Chess, Strategy Game, Board Game for Kids, Adults, Families, Educational, Fun, 2 Players, Family Fun, Learning Activity Toy for Childrens, Gift Set for Kid, Ages 7+ Years",
+        description: "This classic Chess Set includes a foldable chess board and 32 durable pieces, making it perfect for beginners and experienced players alike. Designed to enhance strategic thinking, concentration, and problem-solving skills, it offers endless entertainment for family game nights, travel, and friendly competitions.",
+        originalPrice:329,
+        price:267 ,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/71AagPPHCFL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/813HVq1qm-L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/712VyXeRGVL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71sBTFfwixL._SL1500_.jpg",
+        ],
+  highlights: [
+     "Foldable Chess Board Included",
+    "32 Durable Chess Pieces",
+    "Enhances Strategy & Focus",
+    "Fun for Kids & Adults",
+    "Perfect for Family Game Nights"
+]
+    },  
+      {
+        id:64 ,
+        name: "The Boldfit Badminton Racket is designed for players who demand power, speed, and precision on the court. Its ultra-lightweight construction, aerodynamic frame, and comfortable grip provide exceptional maneuverability, control, and performance, making it ideal for both casual and competitive badminton players.",
+        description: "The Boldfit Badminton Racket is designed for players who demand power, speed, and precision on the court. Its ultra-lightweight construction, aerodynamic frame, and comfortable grip provide exceptional maneuverability, control, and performance, making it ideal for both casual and competitive badminton players.",
+        originalPrice:2499,
+        price: 649,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/71d70XvkfmL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61kN90vV2kL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71IGE0KX8mL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/611YCNX6DUL._SL1500_.jpg",
+        ],
+  highlights: [
+    "Ultra-Lightweight Construction",
+    "Aerodynamic Frame Design",
+    "Powerful Smashes & Fast Reactions",
+    "Comfortable Non-Slip Grip",
+    "Excellent Control & Maneuverability"
+]
+    },  
+      {
+        id:65 ,
+        name: "Ratna's 4 in 1 Indian Seasons Jigsaw Puzzle for Kids. 4 Jigsaw Puzzles 35 Pieces Each",
+        description: "This colorful jigsaw puzzle is an engaging educational toy designed to make learning fun for children. With bright visuals and easy-to-handle pieces, it helps improve concentration, problem-solving, logical thinking, and hand-eye coordination while encouraging creativity and cognitive development.",
+        originalPrice:330,
+        price: 190,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/816zhDKRX6L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81ptCwTD0SL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81vx0e-Mo4L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81ksjxFvQwL._SL1500_.jpg",
+        ],
+  highlights: [
+    "Enhances Concentration & Focus",
+    "Develops Problem-Solving Skills",
+    "Bright & Colorful Puzzle Design",
+    "Improves Hand-Eye Coordination",
+    "Fun Educational Learning Toy"
+]
+    },  
+      {
+        id: 66,
+        name: "Mirana Vande Bharat Bullet Train Toy Set for Kids - Multiple Railway Track Layout, AAA Battery Operated, Fun Gift for Boys & Girls 1+ Years, Made in India (Basic - 43 pcs)",
+        description: "The Mirana Vande Bharat Bullet Train Set brings the excitement of high-speed rail travel to your child's playtime. Featuring a realistic train design, customizable track layouts, and interactive railway elements, this educational toy encourages creativity, problem-solving, and imaginative play while providing hours of fun for young train enthusiasts.",
+        originalPrice:599,
+        price: 549,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/61jA-v+qZ6L._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/61+Y7POnNqL._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/61kA2A4qy+L._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/61Ng-qB+8IL._SL1080_.jpg",
+        ],
+  highlights: [
+    "Realistic Vande Bharat Bullet Train",
+    "10+ Customizable Track Layouts",
+    "Auto Diverter & X-Cross Tracks",
+    "Easy Interlocking Track Pieces",
+    "Promotes STEM Learning & Creativity"
+]
+    },  
+      {
+        id: 67,
+        name: "Wembley 2-in-1 Ludo Snake and Ladder Jumbo Wooden Board Game| Magnetic Ludo and Snake and Ladder Game Set| Vibrant Multiplayer Game for Kids & Adults| Smooth & Durable Indoor Board Game Set",
+        description: "This 2-in-1 Wooden Board Game combines the timeless fun of Ludo and Snakes & Ladders in one beautifully crafted set. Featuring a jumbo-sized board, magnetic game pieces, and durable wooden construction, it provides hours of entertainment while helping children develop counting, coordination, and teamwork skills.",
+        originalPrice:899,
+        price: 599,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/718g9G-bThL._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/71hOB50pBvL._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/71L37B1Z8IL._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/71mDvoPe1-L._SL1100_.jpg",
+        ],
+  highlights: [
+     "2-in-1 Ludo & Snakes Ladders",
+    "Premium Wooden Board Design",
+    "Magnetic Game Pieces",
+    "Jumbo-Sized Playing Surface",
+    "Enhances Learning & Teamwork"
+]
+    },  
+      {
+        id: 68,
+        name: "ivia Storm Football, As Per Basic Standard, Training Ball, 32 Panels, Durable Rubber Cover Molded, Butyl Threadwounded Bladder, to Play On Hard Ground (Size - 5, Yellow)",
+        description: "The Nivia Storm Football is a durable training ball designed for beginners and recreational players. Featuring a tough molded rubber cover, 32-panel construction, and a butyl thread-wound bladder, it delivers excellent shape retention, durability, and performance on hard ground surfaces such as asphalt and concrete.",
+        originalPrice:726,
+        price:369 ,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/814+CTVS6XL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/816Ze4IiGlL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61tVDioi2bL._SL1100_.jpg",
+            "https://m.media-amazon.com/images/I/91Yg-5v1R3L._SL1500_.jpg",
+        ],
+  highlights: [
+     "Ideal for Beginners & Training",
+    "Durable 32-Panel Construction",
+    "Tough Molded Rubber Cover",
+    "Butyl Thread-Wound Bladder",
+    "Suitable for Hard Ground Play"
+]
+    },  
+      {
+        id: 69,
+        name: "Storio Learning Educational Computer Kids Piano Laptop with Led Screen & Music | Fun Activities Toy Computer Tablet for Kids Toddlers 1 2 3 4 5 6 + Year Old Boy and Girls, Multicolor",
+        description: "This Educational Learning Laptop Toy is designed to make learning fun and interactive for young children. Featuring lessons on alphabets, numbers, spelling, colors, animals, music, and basic mathematics, it helps develop cognitive, sensory, and motor skills while encouraging early learning through engaging activities and games.",
+        originalPrice:1299,
+        price:399 ,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/71Ouz+16MSL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/614krGTL+YL._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/71Q0QXPsvZL._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/61fOP3MOSPL._SL1080_.jpg",
+        ],
+  highlights: [
+    "Interactive Learning Laptop Toy",
+    "Teaches Alphabets & Numbers",
+    "Includes Math, Music & Spelling",
+    "Develops Hand-Eye Coordination",
+    "Ideal for Preschool Learning"
+]
+    },  
+      {
+        id:70 ,
+        name: "CHIRKUT 3 Feet Lovable Teddy Bear with Neck Bow Tie for Kids, Soft Stuffed Lightweight Huggable Toys for Baby Girls & Boys, Best Gifting Item for Birthday, Wedding, Anniversary",
+        description: "This adorable Teddy Bear is crafted from ultra-soft, skin-friendly materials, making it perfect for cuddling, gifting, and everyday play. With its cute design, plush texture, and child-safe construction, it brings comfort, joy, and companionship to kids and loved ones of all ages.",
+        originalPrice:1999,
+        price: 499,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/61x7r1p2IGS._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61L5QiUB7NL._SL1080_.jpg",
+            "https://m.media-amazon.com/images/I/61no1eWOa2S._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/61B0sXNYjNL._SL1280_.jpg",
+        ],
+  highlights: [
+    "Ultra-Soft Plush Material",
+    "Cute & Lovable Teddy Design",
+    "Safe and Non-Toxic for Kids",
+    "Perfect for Cuddling & Play",
+    "Ideal Gift for Special Occasions"
+]
+    }, 
+      {
+        id:71 ,
+        name: "Monopoly - Travel World Tour Board Game, for Families and Kids Dry-Erase Gameboard - Borad Game for Boys and Girls Ages 8+ for 2-4 Players",
+        description: "Monopoly Travel World Tour is an exciting family board game that takes players on a journey around the globe. Explore famous destinations, complete travel goals, collect memories, and learn interesting facts about different locations while enjoying a fun and interactive twist on the classic Monopoly experience.",
+        originalPrice:2499,
+        price: 1270,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/71c2ikn6p3L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81KyogT47uL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71JmSGlQuBL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71tLmQs7dRL._SL1500_.jpg",
+        ],
+  highlights: [
+    "Travel-Themed Monopoly Adventure",
+    "Dry-Erase Interactive Gameboard",
+    "Explore Destinations Worldwide",
+    "Collect Unique Travel Memories",
+    "Fun Family Game for Ages 8+"
+]
+    },  
+      {
+        id: 72,
+        name: "Symactive Champ Plastic Cricket Bat Set Combo with Soft Cricket Ball (Size-5)",
+        description: "The Symactive Cricket Set is a complete cricket kit designed for young players to enjoy exciting matches indoors, outdoors, or at the beach. Made from durable, lightweight materials, it includes everything needed for a fun and safe cricket experience while helping children develop coordination, teamwork, and active play habits.",
+        originalPrice:1499,
+        price: 829,
+        category: "toys",
+        images: [
+            "https://m.media-amazon.com/images/I/71U8FE7IGPL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/81tuFupKceL._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71TxHuDai-L._SL1500_.jpg",
+            "https://m.media-amazon.com/images/I/71C-Wlh2inL._SL1500_.jpg",
+        ],
+  highlights: [
+     "Complete Cricket Set for Kids",
+    "Suitable for Indoor & Outdoor Play",
+    "Durable Heavy-Duty Plastic Build",
+    "Stable Stumps with Heavy Base",
+    "Lightweight & Easy to Carry"
+]
+    },  
+    
 ];
 

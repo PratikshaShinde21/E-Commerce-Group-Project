@@ -1,0 +1,173 @@
+.orders-title{
+
+    text-align:center;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+    color:#1e293b;
+
+    margin:40px 0;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    position:relative;
+
+}
+
+.orders-title i{
+
+    color:#2563eb;
+
+    margin-right:12px;
+
+    font-size:2.5rem;
+
+    vertical-align:middle;
+
+}
+
+
+.order-card{
+
+    background:white;
+
+    width:300px;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s ease;
+
+}
+
+.order-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+.order-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+}
+
+.order-card h3{
+
+    font-size:1.2rem;
+
+    color:#1e293b;
+
+    margin-bottom:10px;
+
+}
+
+.order-card p{
+
+    font-size:1rem;
+
+    color:#64748b;
+
+    margin-bottom:10px;
+
+}
+
+.order-card p:nth-of-type(1){
+
+    color:#2563eb;
+
+    font-size:1.2rem;
+
+    font-weight:bold;
+
+}
+
+.order-card p:nth-of-type(2){
+
+    display:inline-block;
+
+    background:#dcfce7;
+
+    color:#166534;
+
+    padding:8px 15px;
+
+    border-radius:25px;
+
+    font-weight:600;
+
+}
+
+.order-card button{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.order-card button:hover{
+
+    background:#dc2626;
+
+}
+
+#ordersContainer{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+    padding:40px 8%;
+
+}
+
+#ordersContainer h2{
+
+    text-align:center;
+
+    grid-column:1/-1;
+
+    color:#334155;
+
+}
