@@ -136,6 +136,30 @@ function updateSummary(){
     "₹" +
     totalValue;
 
+}function toggleSelect(index){
+
+    wishlist[index].selected =
+    !wishlist[index].selected;
+
+    saveWishlist();
+
+    updateSummary();
+
+}
+
+function selectAllProducts(isChecked){
+
+    wishlist.forEach(item=>{
+
+        item.selected =
+        isChecked;
+
+    });
+
+    saveWishlist();
+
+    renderWishlist();
+
 }
 function renderWishlist(
 products = wishlist
@@ -172,7 +196,22 @@ products = wishlist
 
     emptyState.style.display =
     "none";
+const selectAllToggle =
+document.getElementById(
+"selectAllToggle"
+);
 
+if(selectAllToggle){
+
+    selectAllToggle.checked =
+
+    wishlist.length > 0 &&
+
+    wishlist.every(
+    item => item.selected
+    );
+
+}
     products.forEach(
     (item,index)=>{
 
@@ -199,11 +238,11 @@ products = wishlist
 
         <div class="image-wrapper">
 
-            <input
-            type="checkbox"
-            class="select-product"
-            ${item.selected ? "checked" : ""}
-            onchange="toggleSelect(${actualIndex})">
+           <input
+type="checkbox"
+class="select-product"
+${item.selected ? "checked" : ""}
+onchange="toggleSelect(${actualIndex})">
 
             <button
             class="share-product"
@@ -306,8 +345,25 @@ function moveToCart(index){
     )
     ) || [];
 
+    let product =
+    wishlist[index];
+
+    let alreadyExists =
+    cart.find(
+    item => item.id === product.id
+    );
+
+    if(alreadyExists){
+ alert(
+    "Product Already In Cart"
+    );
+
+        return;
+
+    }
+
     cart.push(
-        wishlist[index]
+    product
     );
 
     localStorage.setItem(
@@ -321,8 +377,8 @@ function moveToCart(index){
     );
 
     wishlist.splice(
-        index,
-        1
+    index,
+    1
     );
 
     saveWishlist();
@@ -330,135 +386,154 @@ function moveToCart(index){
     renderWishlist();
 
     showToast(
-        "Moved To Cart"
+    "Moved To Cart 🛒"
     );
 
 }
-
 loadWishlist();
 renderWishlist();
 
-// select all
-document.getElementById("selectAllToggle")
-.addEventListener("change", function(){
+document
+.getElementById(
+"selectAllToggle"
+)
+.addEventListener(
+"change",
+function(){
 
-    wishlist.forEach(item => {
-        item.selected = this.checked;
-    });
-
-    saveWishlist();
-    renderWishlist();
-});
-
-// single product selcet 
-function toggleSelect(index){
-
-    wishlist[index].selected =
-    !wishlist[index].selected;
-
-    saveWishlist();
-
-    renderWishlist();
-}
-
-// delete selected
-document.getElementById("deleteSelectedBtn")
-.addEventListener("click", function(){
-
-    wishlist =
-    wishlist.filter(item => !item.selected);
-
-    saveWishlist();
-
-    renderWishlist();
-
-    showToast("Selected Products Deleted");
-});
-
-// sort product 
-document.getElementById("sortSelect")
-.addEventListener("change", function () {
-
-    let sortedWishlist = [...wishlist];
-
-    if(this.value === "name-asc"){
-        sortedWishlist.sort((a,b) =>
-            a.name.localeCompare(b.name)
-        );
-    }
-
-    else if(this.value === "name-desc"){
-        sortedWishlist.sort((a,b) =>
-            b.name.localeCompare(a.name)
-        );
-    }
-
-    else if(this.value === "price-low"){
-        sortedWishlist.sort((a,b) =>
-            a.price - b.price
-        );
-    }
-
-    else if(this.value === "price-high"){
-        sortedWishlist.sort((a,b) =>
-            b.price - a.price
-        );
-    }
-
-    renderWishlist(sortedWishlist);
-
-});
-
-// share btn
-document.getElementById("shareWishlistBtn")
-.addEventListener("click", function(){
-
-    if(navigator.share){
-
-        navigator.share({
-            title:"My Wishlist",
-            text:"Check my wishlist",
-            url:window.location.href
-        });
-
-    }else{
-        alert("Sharing not supported");
-    }
-
-});
-
-// copy link
-document.getElementById("copyLinkBtn")
-.addEventListener("click", function(){
-
-    navigator.clipboard.writeText(
-        window.location.href
+    selectAllProducts(
+    this.checked
     );
 
-    alert("Link Copied");
+});function deleteSelectedProducts(){
 
-});
-// share product btn
-function shareProduct(index){
+    let selectedItems =
+    wishlist.filter(
+    item => item.selected
+    );
 
-    let product = wishlist[index];
+    if(selectedItems.length === 0){
 
-    let text =
-    product.name +
-    " - ₹" +
-    product.price;
+        alert(
+        "Select Products First"
+        );
 
-    if(navigator.share){
+        return;
 
-        navigator.share({
-            title: product.name,
-            text: text
-        });
-
-    }else{
-
-        navigator.clipboard.writeText(text);
-
-        alert("Product details copied");
     }
-}
+
+    wishlist =
+    wishlist.filter(
+    item => !item.selected
+    );
+
+    saveWishlist();
+
+    renderWishlist();
+
+    showToast(
+    "Selected Products Deleted"
+    );
+
+}function moveSelectedToCart(){
+
+    let currentUser =
+    JSON.parse(
+    localStorage.getItem(
+    "currentUser"
+    )
+    );
+
+    if(!currentUser){
+
+        alert(
+        "Please Login First"
+        );
+
+        return;
+
+    }
+
+    let selectedItems =
+    wishlist.filter(
+    item => item.selected
+    );
+
+    if(selectedItems.length === 0){
+
+        alert(
+        "Select Products First"
+        );
+
+        return;
+
+    }
+
+    let cartKey =
+    "cart_" +
+    currentUser.mobile;
+
+    let cart =
+    JSON.parse(
+    localStorage.getItem(
+    cartKey
+    )
+    ) || [];
+
+    selectedItems.forEach(product=>{
+
+        let exists =
+        cart.find(
+        item => item.id === product.id
+        );
+
+        if(!exists){
+
+            cart.push(
+            product
+            );
+
+        }
+
+    });
+
+    localStorage.setItem(
+
+        cartKey,
+
+        JSON.stringify(
+        cart
+        )
+
+    );
+
+    wishlist =
+    wishlist.filter(
+    item => !item.selected
+    );
+
+    saveWishlist();
+
+    renderWishlist();
+
+    showToast(
+    "Selected Products Moved To Cart 🛒"
+    );
+
+}document
+.getElementById(
+"deleteSelectedBtn"
+)
+.addEventListener(
+"click",
+deleteSelectedProducts
+);
+
+document
+.getElementById(
+"moveSelectedBtn"
+)
+.addEventListener(
+"click",
+moveSelectedToCart
+);

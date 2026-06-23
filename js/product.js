@@ -10,6 +10,7 @@ function setWishlistProduct(id){
     addToWishlist();
 
 }
+
 function toggleWishlist(id){
 
     let currentUser =
@@ -87,15 +88,10 @@ function toggleWishlist(id){
 
     localStorage.setItem(
         wishlistKey,
-        JSON.stringify(wishlist)
+        JSON.stringify(
+        wishlist
+        )
     );
-
-    setTimeout(()=>{
-
-        window.location.href =
-        "wishlist.html";
-
-    },500);
 
 }
 
