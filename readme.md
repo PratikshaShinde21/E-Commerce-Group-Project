@@ -16,7 +16,7 @@ place orders, and enjoy a smooth shopping experience.
 
 ## 🌐 Live Demo
 
-🔗 https://your-netlify-link.netlify.app/
+🔗 [e-commerce-group-project.vercel.app](https://e-commerce-group-project.vercel.app/)
 
 ---
 
