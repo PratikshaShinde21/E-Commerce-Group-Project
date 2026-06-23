@@ -53,7 +53,7 @@ const recommendedProducts = [
         name: "Premium Shirt",
         price: 999,
         oldPrice: 1400,
-        image: "../images/premiumshirt.jpg"
+        image: "../images/premium shirt.jpg"
     },
 
     {
