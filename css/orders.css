@@ -1,175 +1,233 @@
 .orders-title{
-
     text-align:center;
-
     font-size:1.5rem;
-
     font-weight:700;
-
     color:#1e293b;
-    padding-top: 90px;
-
     margin:40px 0;
-
+    margin-top: 110px;
     letter-spacing:1px;
-
     text-transform:uppercase;
-
     position:relative;
-
 }
-
 .orders-title i{
-
     color:#2563eb;
-
     margin-right:12px;
-
     font-size:2.5rem;
-
     vertical-align:middle;
-
 }
-
-
 .order-card{
-
     background:white;
-
     width:300px;
-
-    padding:20px;
-
-
+    padding:5px;
     border-radius:20px;
-
     text-align:center;
-
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
     transition:0.3s ease;
-
 }
-
 .order-card:hover{
-
     transform:translateY(-8px);
-
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
-
 }
-
 .order-card img{
-
     width:100%;
-
-    height:220px;
-
+    height:260px;
+    margin-top: 10px;
     object-fit:cover;
-
     border-radius:15px;
-
     margin-bottom:15px;
-
 }
-
 .order-card h3{
-
     font-size:1.2rem;
-
     color:#1e293b;
-
     margin-bottom:10px;
-
+    display:-webkit-box;
+    line-clamp:2;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    line-height:1.5;
+    height:3em;
 }
-
 .order-card p{
-
     font-size:1rem;
-
     color:#64748b;
-
     margin-bottom:10px;
-
 }
-
 .order-card p:nth-of-type(1){
-
     color:#2563eb;
-
     font-size:1.2rem;
-
     font-weight:bold;
-
 }
-
 .order-card p:nth-of-type(2){
-
     display:inline-block;
-
     background:#dcfce7;
-
     color:#166534;
-
     padding:8px 15px;
-
     border-radius:25px;
-
     font-weight:600;
-
 }
-
 .order-card button{
-
-    width:100%;
-
+    width:60%;
     margin-top:15px;
-
     padding:12px;
-
     border:none;
-
-    border-radius:10px;
-
+    border-radius:40px;
     background:#ef4444;
-
     color:white;
-
     font-size:1rem;
-
     font-weight:600;
-
     cursor:pointer;
-
     transition:0.3s;
-
 }
-
 .order-card button:hover{
-
     background:#dc2626;
-
 }
-
 #ordersContainer{
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(280px,1fr));
-
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
     gap:25px;
+    padding:20px;
+}
+#ordersContainer h2{
+    text-align:center;
+    grid-column:1/-1;
+    color:#334155;
+}
+@media (max-width:992px){
+    .orders-title{
+        font-size:1.3rem;
+    }
+    .orders-title i{
+        font-size:2rem;
+    }
+    #ordersContainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:10px;
+    }
+    .order-card{
+        width:100%;
+        max-width:320px;
+    }
+}
+@media (max-width:768px){
+    .orders-title{
+        font-size:1.2rem;
+        margin:20px 0;
+        margin-top: 100px;
+    }
+    .orders-title i{
+        font-size:1.8rem;
+    }
+    #ordersContainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+    .order-card{
+        width:100%;
+        max-width:320px;
+        margin:0 auto;
+    }
+    .order-card img{
+        height:220px;
+        object-fit:cover;
+    }
+    .order-card h3{
+        font-size:1rem;
+    }
+    .order-card p{
+        font-size:0.95rem;
+    }
+    .order-card button{
+        padding:10px;
+        font-size:0.95rem;
+    }
+}
+@media (max-width:480px){
+    .orders-title{
+        font-size:1rem;
+        letter-spacing:0.5px;
+    }
+    .orders-title i{
+        font-size:1.5rem;
+    }
+    #ordersContainer{
+        align-items:center;
+    }
+    .order-card{
+        width:100%;
+        max-width:280px;
+        margin:0 auto;
+    }
+    .order-card img{
+        width: 100%;
+   }
+    .order-card h3{
+        font-size:0.95rem;
+    }
+    .order-card p:nth-of-type(1){
+        font-size:1rem;
+    }
+    .order-card button{
+        font-size:0.9rem;
+    }
+}/* =========================
+   ORDERS PAGE DARK MODE
+========================= */
 
-    padding:40px 8%;
-
+body.dark-mode .orders-title{
+    color:#f8fafc;
 }
 
-#ordersContainer h2{
+body.dark-mode .orders-title i{
+    color:#60a5fa;
+}
 
-    text-align:center;
+/* Order Card */
+body.dark-mode .order-card{
+    background:#1e293b;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
 
-    grid-column:1/-1;
+body.dark-mode .order-card:hover{
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
 
-    color:#334155;
+body.dark-mode .order-card h3{
+    color:#f8fafc;
+}
 
+/* Price */
+body.dark-mode .order-card p{
+    color:#cbd5e1;
+}
+
+body.dark-mode .order-card p:nth-of-type(1){
+    color:#60a5fa;
+}
+
+/* Order Status */
+body.dark-mode .order-card p:nth-of-type(2){
+    background:#14532d;
+    color:#86efac;
+}
+
+/* Cancel Button */
+body.dark-mode .order-card button{
+    background:#dc2626;
+    color:white;
+}
+
+body.dark-mode .order-card button:hover{
+    background:#ef4444;
+}
+
+/* Empty Orders Message */
+body.dark-mode #ordersContainer h2{
+    color:#cbd5e1;
 }
