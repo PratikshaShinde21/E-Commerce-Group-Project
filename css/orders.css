@@ -1,3 +1,12 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.orders-section{
+    flex: 1;
+}
 .orders-title{
     text-align:center;
     font-size:1.5rem;
