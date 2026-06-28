@@ -41,16 +41,16 @@ place orders, and enjoy a smooth shopping experience.
 
 ## ✨ Features
 
- ##### User Registration & Login System  
-  ##### Browse Products by Category  
-  ##### Product Search Functionality  
-  ##### Product Details Page  
-  ##### Add Products to Wishlist  
-  ##### Add to Cart Functionality  
-  ##### Checkout & Order Placement  
-  ##### Order History Management  
- ##### Dark / Light Theme Toggle  
-  ##### Fully Responsive Design  
+ ##### - User Registration & Login System  
+  ##### - Browse Products by Category  
+  ##### - Product Search Functionality  
+  ##### - Product Details Page  
+  ##### - Add Products to Wishlist  
+  ##### - Add to Cart Functionality  
+  ##### - Checkout & Order Placement  
+  ##### - Order History Management  
+ ##### - Dark / Light Theme Toggle  
+  ##### - Fully Responsive Design  
 
 ---
 
